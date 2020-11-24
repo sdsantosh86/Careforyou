@@ -1,0 +1,9 @@
+<div id="count" hidden>{{ count }}</div>
+{% for i in childcares %}
+<a class="dropdown-item d-flex align-items-center" href="/details?id={{ i.id }}">
+    <div class="font-weight-bold">
+        <div class="text-truncate">{{ i.name }}</div>
+        <div class="small text-gray-500">{{ i.suburb_id.name }}, {{ i.suburb_id.postcode }}</div>
+    </div>
+</a>
+{% endfor %}

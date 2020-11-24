@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load i18n %}
+<head>
+    {% include "component/meta.html" %}
+
+  <title>{% trans "Home | Careforyou" %}</title>
+
+  <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="{% static "landing/bootstrap.min.css"%}">
+    {% include "component/css.html" %}
+</head>
+
+<body id="page-top" class="sidebar-toggled">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    {% include "component/sidebar.html" %}
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+<nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+        {% load static %}
+        <a class="navbar-brand text-primary" href="/">
+            <img src="{% static "landing/website_pic.png" %}" alt="Careforyou"/>
+            Careforyou
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+{#                  <span class="mr-2 d-none d-lg-inline text-gray-800 small">Language</span>#}
+                  <i class="fas fa-language fa-2x"></i>
+              </a>
+              <!-- Dropdown - Language -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="langDropdown">
+                  <a class="dropdown-item" href="" onclick="choose_lang('EN')">
+                  <i class="fas fa-globe-asia fa-sm fa-fw mr-2 text-gray-400"></i>
+                  English
+                </a>
+                  <a class="dropdown-item" href="" onclick="choose_lang('ZH')">
+                  <i class="fas fa-globe-asia fa-sm fa-fw mr-2 text-gray-400"></i>
+                  中文
+                </a>
+                <a class="dropdown-item" href="" onclick="choose_lang('HI')">
+                  <i class="fas fa-globe-asia fa-sm fa-fw mr-2 text-gray-400"></i>
+                  हिन्दी
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+     <!-- Search -->
+    <header class="masthead text-white text-center" style="background:url('{% static "landing/background.jpg" %}')no-repeat center center;background-size:cover;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">{% trans "Find the Childcare Services Nearby" %}</h1>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <form action="search" method="post"> {% csrf_token %}
+                        <div class="input-group form-row">
+                            <input name="q" id="search" type="text" class="form-control bg-light" placeholder="{% trans "Suburb Name or Postcode" %}" aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-primary" type="submit">
+                                {% trans "Search" %}
+                              </button>
+                            </div>
+                          </div>
+                          <div class="input-group my-4">
+                            <label for="language" class="mr-4">{% trans "(Optional)Choose a language for your childcare services:" %}</label>
+                            <select class="bg-white"name="language" id="Language_selector" style="width: 160px">
+                                <option value="all">All</option>
+                                {% for i in language_list %}
+                                    <option value="{{ i.language }}">{{ i.language }}</option>
+                              {% endfor %}
+                            </select>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+     <!-- Features -->
+    <div class="bg-white text-center mb-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto my-5">
+                        <div class="d-flex features-icons-icon mb-2">
+                            <i class="fas fa-map-marked-alt m-auto fa-4x"></i>
+                        </div>
+                        <h3>{% trans "Explore Nearby" %}</h3>
+                        <p class="lead mb-0">{% trans "Find Bilingual Childcare Services near you fluent in your native language." %}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto my-5">
+                        <div class="d-flex features-icons-icon mb-2">
+                            <i class="fas fa-download m-auto fa-4x"></i>
+                        </div>
+                        <h3>{% trans "Save Suitable Services" %}</h3>
+                        <p class="lead mb-0">{% trans "Download the information of centres that you find suitable. No need to create an account or login." %}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto my-5">
+                        <div class="d-flex features-icons-icon mb-2">
+                            <i class="fas fa-baby m-auto fa-4x"></i>
+                        </div>
+                        <h3>{% trans "Childcare Policies" %}</h3>
+                        <p class="lead mb-0">{% trans "Find the information related to childcare policies in Australia." %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- News -->
+    <div class="bg-light">
+        <div class="container">
+        <div class="row">
+            <h2 class="my-4 text-gray-900">{% trans "News and Articles" %}</h2>
+        </div>
+            {% for article in news %}
+                <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-thumbnail" style="height: 90%;width: 90%" src="{{ article.image }}">
+                </div>
+
+                    <div class="col-lg-8">
+                        <div class="post-preview">
+                    <a href="{{ article.url}}">
+                        <h2 class="post-title h4 text-gray-900">{{ article.title}}</h2>
+                        <p class="post-subtitle text-gray-600">{{ article.description }}</p>
+                    </a>
+                    <p class="post-meta">{% trans "Posted by&nbsp;" %}<a href="{{ article.source.url }}">{{ article.source.name }}</a>{% trans " at " %}{{ article.publishedAt }}</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                {% endfor %}
+            </div>
+        </div>
+    <!-- Footer -->
+    {% include 'component/footer.html' %}
+      <!-- End of Footer -->
+      </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+    {% include "component/script.html" %}
+
+  </div>
+</body>
+
+</html>

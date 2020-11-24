@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load i18n %}
+
+<head>
+    {% include "component/meta.html" %}
+
+  <title>{% trans "Childcare Details | Careforyou" %}</title>
+
+    {% include "component/css.html" %}
+
+  <!-- Custom styles for Map-->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
+
+</head>
+
+<body id="page-top" class="sidebar-toggled">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    {% include "component/sidebar.html" %}
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Top Bar -->
+        {% include "component/topbar.html" %}
+        <!-- End of Top Bar -->
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">{% trans "Childcare Details" %}</h1>
+                <div id = "btnAdd">
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#confirmModal">
+                        <i class="fas fa-download fa-sm text-white-50"></i> {% trans "Add to the SaveList" %}</a>
+                </div>
+          </div>
+
+          <!-- Content Row -->
+
+          <div class="row">
+
+            <div class="col-xl-5 col-lg-5">
+
+              <!-- Details -->
+              <div class="card shadow mb-4">
+                <div class="card-body">
+                  <div class="text-center">
+                  </div>
+                  <div>
+                    <h4 class="text-gray-900">{{ childcare.name }}</h4>
+                      <div id="id" hidden>{{ childcare.id }}</div>
+                    <div class="text-xs font-weight-bold text-uppercase">{{ childcare.type_id.type }}</div>
+                  </div>
+                   <hr>
+                  <div class="mb-2 text-xs">
+                    {% trans "Quality Stars" %}
+                      <a class="ml-2" href="#" role="button"
+                      id="dropdownMenuLinkRating" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-question-circle"></i>
+                        </a>
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkRating">
+                      <div class="dropdown-header text-gray-800">{% trans "About the Rating" %}</div>
+                      <p class="ml-4 mr-4">
+                          {% trans "We use National Quality Standard Here. The National Quality Standard sets a benchmark for the quality of all education and care services across Australia." %}</p>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-gray-600"
+                        href="https://www.acecqa.gov.au/assessment/assessment-and-rating-process">{% trans "More details" %} <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                {% if quality_exist %}
+                    {% with ''|center:quality_star as range %}
+                        {% for _ in range %}
+                            <i class="fas fa-star" style="color: tomato"></i>
+                        {% endfor %}
+                    {% endwith %}
+                    {% with ''|center:empty_star as range %}
+                        {% for _ in range %}
+                            <i class="far fa-star" style="color: tomato"></i>
+                        {% endfor %}
+                    {% endwith %}
+                {% else %}
+                    Not Available.
+                {% endif %}
+                  <hr>
+                  <div class="mb-4 text-xs">
+                    {% trans "Contact Information" %}
+                  </div>
+                  <div class="row no-gutters align-items-center mb-2">
+                    <div class="mr-2">
+                      <i class="fas fa-address-card text-gray-900"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase">{% trans "Address" %}</div>
+                      <div class="h6 text-gray-800">{{ childcare.address }}, {{ childcare.suburb_id.name }},
+                        </div>
+                        <div class="h6 text-gray-800">{{ childcare.state }} {{ childcare.suburb_id.postcode }}</div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters align-items-center mb-2">
+                    <div class="mr-2">
+                      <i class="fas fa-phone-alt text-gray-900"></i>
+                    </div>
+                    <div class="">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase">{% trans "Phone" %}</div>
+                      <div class="h6 text-gray-800">{{ childcare.phone }}</div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters align-items-center mb-2">
+                    <div class="mr-2">
+                      <i class="fas fa-envelope-open-text text-gray-900"></i>
+                    </div>
+                    <div class="">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase">{% trans "Email" %}</div>
+                      <div class="h6 text-gray-800">{{ childcare.email }}</div>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters align-items-center mb-2">
+                    <div class="mr-2">
+                      <i class="fas fa-fax text-gray-900"></i>
+                    </div>
+                    <div class="">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase">{% trans "Fax" %}</div>
+                      <div class="h6 text-gray-800">{{ childcare.fax }}</div>
+                    </div>
+                  </div>
+
+                  <hr>
+                  <div class="mb-4 text-xs">
+                    {% trans "Language Program" %}
+                  </div>
+                  {% if program_exist %}
+                  <div class="dropdown mb-4">
+                    <a class="dropdown-toggle btn btn-success btn-icon-split" href="#" role="button"
+                      id="dropdownMenuLinkProgram" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="icon text-white-50">
+                        <i class="fas fa-check"></i>
+                      </span>
+                      <span class="text">{% trans "Early Childhood Language Program" %}</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkProgram">
+                      <div class="dropdown-header text-gray-800">{% trans "About Early Childhood Language Program" %}</div>
+                      <p class="ml-4 mr-4">
+                        {% trans "The Victorian Government has allocated $17.9 million over four years (2019-2022) for the Early Childhood Language Program. It consists of two program modes: the Learn Languages at Kindergarten Program and Bilingual Kindergartens." %}</p>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-gray-600"
+                        href="https://www.education.vic.gov.au/about/programs/Pages/eclanguageprograms.aspx?Redirect=1">More
+                        detail <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                      <div class="mb-4">
+                    <div class="mb-4 text-xs">
+                      {% trans "Program Highlight" %}
+                    </div>
+                    <div class="btn btn-primary">
+                      <span class="text">{{ childcare.program_id.type }}</span>
+                    </div>
+                    <div class="btn btn-warning">
+                      <span class="text">{{ childcare.language_id.language }}</span>
+                    </div>
+                  </div>
+                  {% else %}
+                  <div class="dropdown no-arrow mb-4">
+                    <a class="dropdown-toggle btn btn-danger btn-icon-split" href="#" role="button"
+                      id="dropdownMenuLinkProgram" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="icon text-white-50">
+                        <i class="fas fa-times"></i>
+                      </span>
+                      <span class="text">{% trans "Early Childhood Language Program" %}</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkProgram">
+                      <div class="dropdown-header text-gray-800">{% trans "About Early Childhood Language Program" %}</div>
+                      <p class="ml-4 mr-4">
+                        {% trans "The Victorian Government has allocated $17.9 million over four years (2019-2022) for the Early Childhood Language Program. It consists of two program modes: the Learn Languages at Kindergarten Program and Bilingual Kindergartens." %}</p>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-gray-600"
+                        href="https://www.education.vic.gov.au/about/programs/Pages/eclanguageprograms.aspx?Redirect=1"> {% trans "More details" %}<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                  {% endif %}
+
+                </div>
+              </div>
+               <!-- Reviews -->
+            {% if reviews_exist %}
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">{% trans "Comments and Reviews" %}</h6>
+                    <div class="text-xs">{% trans "Powered by Google Places" %}</div>
+                </div>
+                <div class="card-body pre-scrollable" style="height: 500px">
+                    {% for review in reviews %}
+                  <div>
+                    <div class="mb-2 text-xs">
+                      <img class="img-profile rounded-circle" src="{{ review.profile_photo_url }}" style="height: 30px;width: 30px;" alt="{{ review.author_name }}">
+                      <a href="{{ review.author_url }}">{{ review.author_name }}</a>
+                    </div>
+                     {% with ''|center:review.rating as range %}
+                        {% for _ in range %}
+                            <i class="fas fa-star" style="color: tomato"></i>
+                        {% endfor %}
+                     {% endwith %}
+                    <p class="my-2">"{{ review.text }}"</p>
+                    <div class="mb-2 text-xs">
+                      Posted at {{ review.time }}
+                    </div>
+                  </div>
+                  <hr>
+                    {% endfor %}
+                  </div>
+              </div>
+            {% endif %}
+            </div>
+
+            <div class="col-xl-7 col-lg-7">
+              <!-- Map -->
+              <div class="card shadow mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <div id='map' style='width: 100%; height: 100%;'></div>
+                  </div>
+                </div>
+              </div>
+                {% if quality_exist %}
+                    <!-- Quality Rating -->
+                    <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">{% trans "Quality Ratings" %}</h6>
+                    <div class="text-xs">{% trans "Based on NQS by ACECQA" %}</div>
+                </div>
+                <div class="card-body">
+                  <h4 class="small font-weight-bold">{% trans "Educational program and practice" %}
+                      <a class="ml-2" href="#" role="button"
+                      id="dropdownMenuLinkRating1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-question-circle"></i>
+                        </a>
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkRating1">
+                      <div class="dropdown-header text-gray-800">{% trans "Educational program and practice" %}</div>
+                      <p class="ml-4 mr-4">{% trans "Educational program and practice of educators are child-centred, stimulating and maximise opportunities for enhancing and extending each child’s learning and development." %}</p>
+                    </div>
+                      <span class="float-right">{{rating.0}}</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: {%  widthratio rating.0 1 20 %}%" aria-valuenow="{{rating.0}}"
+                      aria-valuemin="1" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">{% trans "Children’s health and safety" %}
+                      <a class="ml-2" href="#" role="button"
+                      id="dropdownMenuLinkRating2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-question-circle"></i>
+                        </a>
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkRating2">
+                      <div class="dropdown-header text-gray-800">{% trans "Children’s health and safety" %}</div>
+                      <p class="ml-4 mr-4">{% trans "Children have the right to experience quality education and care in an environment that safeguards and promotes their health, safety and wellbeing." %}</p>
+                    </div>
+                      <span class="float-right">{{rating.1}}</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: {%  widthratio rating.1 1 20 %}%" aria-valuenow="{{rating.1}}"
+                      aria-valuemin="1" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">{% trans "Physical environment" %}
+                      <a class="ml-2" href="#" role="button"
+                      id="dropdownMenuLinkRating3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-question-circle"></i>
+                        </a>
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkRating3">
+                      <div class="dropdown-header text-gray-800">{% trans "Physical environment" %}</div>
+                      <p class="ml-4 mr-4">{% trans "Physical environment is safe, suitable and provides a rich and diverse range of experiences that promote children’s learning and development." %}</p>
+                    </div>
+                      <span class="float-right">{{rating.2}}</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar" role="progressbar" style="width: {%  widthratio rating.2 1 20 %}%" aria-valuenow="{{rating.2}}" aria-valuemin="1"
+                      aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">{% trans "Staffing arrangements" %}
+                      <a class="ml-2" href="#" role="button"
+                      id="dropdownMenuLinkRating4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-question-circle"></i>
+                        </a>
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkRating4">
+                      <div class="dropdown-header text-gray-800">{% trans "Staffing arrangements" %}</div>
+                      <p class="ml-4 mr-4">{% trans "Qualified and experienced educators, who develop warm, respectful relationships with children, create predictable environments and encourage children’s active engagement in the learning program." %}</p>
+                    </div>
+                      <span class="float-right">{{rating.3}}</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: {%  widthratio rating.3 1 20 %}%" aria-valuenow="{{rating.3}}"
+                      aria-valuemin="1" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">{% trans "Relationships with children" %}
+                      <a class="ml-2" href="#" role="button"
+                      id="dropdownMenuLinkRating5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-question-circle"></i>
+                        </a>
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkRating5">
+                      <div class="dropdown-header text-gray-800">{% trans "Relationships with children" %}</div>
+                      <p class="ml-4 mr-4">{% trans "Relationships with children are responsive, respectful and promote children’s sense of security and belonging." %}</p>
+                    </div>
+                      <span class="float-right">{{rating.4}}</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: {%  widthratio rating.4 1 20 %}%" aria-valuenow="{{rating.4}}"
+                      aria-valuemin="1" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">{% trans "Collaborative partnerships with families and communities" %}
+                      <a class="ml-2" href="#" role="button"
+                      id="dropdownMenuLinkRating5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-question-circle"></i>
+                        </a>
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkRating5">
+                      <div class="dropdown-header text-gray-800">{% trans "Collaborative partnerships with families and communities" %}</div>
+                      <p class="ml-4 mr-4">{% trans "Collaborative relationships with families are fundamental to achieving quality outcomes for children, and community partnerships based on active communication, consultation and collaboration are essential." %}</p>
+                    </div>
+                      <span class="float-right">{{rating.5}}</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: {%  widthratio rating.5 1 20 %}%" aria-valuenow="{{rating.5}}"
+                      aria-valuemin="1" aria-valuemax="5"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">{% trans "Governance and leadership" %}
+                      <a class="ml-2" href="#" role="button"
+                      id="dropdownMenuLinkRating6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-question-circle"></i>
+                        </a>
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLinkRating6">
+                      <div class="dropdown-header text-gray-800">{% trans "Governance and leadership" %}</div>
+                      <p class="ml-4 mr-4">{% trans "Effective leadership and governance of the service contributes to quality environments for children’s learning and development. Effective leaders establish shared values for the service and set clear direction for the service’s continuous improvement." %}</p>
+                    </div>
+                      <span class="float-right">{{rating.6}}</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: {%  widthratio rating.6 1 20 %}%" aria-valuenow="{{rating.6}}"
+                      aria-valuemin="1" aria-valuemax="5"></div>
+                  </div>
+                </div>
+              </div>
+                {% endif %}
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      {% include "component/footer.html" %}
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+  <!-- confirm Modal-->
+  <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="add"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{% trans "Add to the SaveList?" %}</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">{% trans "Do you want to add the current childcare to your SaveList?" %}</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">{% trans "Cancel" %}</button>
+          <a class="btn btn-primary" href="#" onclick="add_this();" data-dismiss="modal">{% trans "Add" %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  {% include "component/script.html" %}
+
+  <!-- Scripts for Map-->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <script src="{% static "map/map.js" %}"></script>
+
+  <script>
+    let map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [{{childcare.longitude}},{{ childcare.latitude }}],
+    zoom:15
+    });
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+    // create the popup
+    let popup = new mapboxgl.Popup({ offset: 25 }).setHTML('{{ childcare.name }}');
+    let marker = new mapboxgl.Marker()
+    .setLngLat([{{childcare.longitude}},{{ childcare.latitude }}])
+    .setPopup(popup)
+    .addTo(map);
+    </script>
+</body>
+
+</html>

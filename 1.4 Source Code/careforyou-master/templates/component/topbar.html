@@ -1,0 +1,120 @@
+{% load i18n %}
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" action="/search" method="post">{% csrf_token %}
+            <div class="input-group">
+              <input id="search" type="text" name="q" class="form-control bg-light border-0 small" placeholder="{% trans "Suburb Name or Postcode..." %}" aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+           
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown" >
+                <form class="form-inline mr-auto w-75 navbar-search" action="/search" method="post">{% csrf_token %}
+                  <div class="input-group">
+                    <input id="dropdown_search" name="q" type="text" class="form-control bg-light border-0 small" placeholder={% trans "Suburb Name or Postcode..." %} aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="submit">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+              <!-- Nav Item - SaveList -->
+            <li class="nav-item dropdown">
+                <a href="#" class="btn btn-primary btn-icon-split btn-sm my-4" id="savelistDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                    <span class="icon text-white-50">
+                      <i class="fas fa-list-ul fa-fw"></i>
+                    </span>
+                    <span class="text">
+                        {% trans "SaveList" %}
+                        <span id="count_savelist" class="badge badge-danger badge-counter">0</span>
+                    </span>
+                  </a>
+              <!-- Dropdown -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="savelistDropdown">
+                <h6 class="dropdown-header">
+                  {% trans "SaveList" %}
+                </h6>
+                <div id="savelist">
+                    <a class="dropdown-item d-flex align-items-center" href="details">
+                        <div class="font-weight-bold">
+                            <div class="text-truncate">Apple Childcare</div>
+                            <div class="small text-gray-500">Melbourne 3000</div>
+                        </div>
+                    </a>
+                </div>
+                <a class="dropdown-item text-center small text-gray-900" data-toggle="modal" data-target="#clearModal">
+                  <i class="fas fa-broom"></i>
+                  {% trans "Clear the List" %}
+                </a>
+                <a class="dropdown-item text-center small text-gray-900" href="/generate_pdf">
+                  <i class="fas fa-download"></i>
+                    {% trans "Download the List" %}
+                </a>
+              </div>
+                <!-- Clear Modal-->
+                <div class="modal fade" id="clearModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">{% trans "Clear the list?" %}</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">{% trans "Do you want to clear your SaveList?" %}</div>
+                      <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">{% trans "Cancel" %}</button>
+                        <a class="btn btn-danger" href="#" onclick="clear_all()" data-dismiss="modal">{% trans "Clear" %}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </li>
+              <!-- Nav Item - Language -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-language fa-2x mt-2"></i>
+              </a>
+              <!-- Dropdown - Language -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="langDropdown">
+                  <a class="dropdown-item" href="" onclick="choose_lang('EN')">
+                  <i class="fas fa-globe-asia fa-sm fa-fw mr-2 text-gray-400"></i>
+                  English
+                </a>
+                  <a class="dropdown-item" href="" onclick="choose_lang('ZH')">
+                  <i class="fas fa-globe-asia fa-sm fa-fw mr-2 text-gray-400"></i>
+                  中文
+                </a>
+                <a class="dropdown-item" href="" onclick="choose_lang('HI')">
+                  <i class="fas fa-globe-asia fa-sm fa-fw mr-2 text-gray-400"></i>
+                  हिन्दी
+                </a>
+              </div>
+            </li>
+          </ul>
+
+        </nav>

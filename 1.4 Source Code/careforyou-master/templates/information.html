@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load i18n %}
+<head>
+    {% include "component/meta.html" %}
+
+  <title>{% trans "Information | Careforyou" %}</title>
+
+    {% include "component/css.html" %}
+    <link href="{% static "information/card.css" %}" rel="stylesheet">
+</head>
+
+<body id="page-top" class="sidebar-toggled">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    {% include "component/sidebar.html" %}
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        {% include "component/topbar.html" %}
+        <!-- End of Topbar -->
+
+                    <!-- Begin Page Content -->
+                    <div class="container-fluid">
+
+                      <!-- Page Heading -->
+                      <h1 class="h3 mb-4 text-gray-800">{% trans "Information for Childcare" %}</h1>
+                      <div class="row">
+
+                         <!-- COVID19 -->
+                         <div class="col-xl-12 col-lg-12">
+                          <div class="card shadow mb-4">
+                            <!-- Card Body -->
+                            <div class="card-body bkg" style="background:url('{% static "img/info.jpeg" %}')no-repeat center center;">
+                              <div class="container" >
+                                <h1 class="h1 text-white">{% trans "COVID-19 Information" %}</h1>
+                                <p class="text-white">{% trans "This link contains the latest information from Victorian Government, Department of Education and Training regarding childcare for Victorian Parents.It also contains the latest advice regarding Coronavirus (COVID-19)" %}</p>
+                                <a class="btn btn-primary" target="_blank" href="https://www.education.vic.gov.au/parents/Pages/default.aspx" role="button">{% trans "Learn More" %} &raquo;</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <!-- Guidance -->
+                         <div class="col-xl-12 col-lg-12">
+                          <div class="card shadow mb-4">
+                            <!-- Card Body -->
+                            <div class="card-body">
+                              <div class="container" >
+                                <h1 class="h1 text-gray-900">{% trans "Practical Information for Victorian Parents" %}</h1>
+                                <p>{% trans "These are the detailed information for the parents step by step process of how to find and enroll his child in childcare." %}</p>
+                                  <div class="row">
+                                      <!-- Collapsable Cards -->
+                                      <div class="col-xl-6 col-md-6">
+                                          <div class="card shadow mb-2">
+                                              <!-- Card Header - Accordion -->
+                                              <a href="#collapseCard1" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
+                                                  <h6 class="m-0 font-weight-bold text-primary">{% trans "Early parenting centers" %}</h6>
+                                              </a>
+                                              <!-- Card Content - Collapse -->
+                                              <div class="collapse" id="collapseCard1">
+                                                  <div class="card-body">
+                                                      <ul>
+                                                          <li>{% trans "Early parenting centers provide a number of different services where their main agenda is to help parents who require additional support to take care of their kids." %}</li>
+                                                          <li>{% trans "They are mainly focused on building ability and talents for parenting, enhancing the bond between parent and child, Strengthening the relation of a family to their culture and Assessing the mental health of children." %}</li>
+                                                          <li>{% trans "Most of these services are accessible for parents who have a kid right from the pregnancy till the child grows to 4 years of age, and as a kid he requires extra help to learn skills and grow up." %}</li>
+                                                      </ul>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item text-primary" target="_blank" href="https://www.education.vic.gov.au/parents/services-for-parents/Pages/early-parenting-centres.aspx">{% trans "More Detail" %} <i class="fas fa-arrow-right"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card shadow mb-2">
+                                              <!-- Card Header - Accordion -->
+                                              <a href="#collapseCard2" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
+                                                  <h6 class="m-0 font-weight-bold text-primary">{% trans "Community playgroups" %}</h6>
+                                              </a>
+                                              <!-- Card Content - Collapse -->
+                                              <div class="collapse" id="collapseCard2">
+                                                  <div class="card-body">
+                                                      <ul>
+                                                          <li>{% trans "This is a fun group gathering where parents and children under the school age meet up." %}</li>
+                                                          <li>{% trans "It’s usually parents who organize these events for kids to interact with each other and find friends and the childs gets a place to play with his other friends ,meet different people from different cultures." %}</li>
+                                                          <li>{% trans "There is usually a base fee for these community gatherings to compensate for the cost to organise the event." %}</li>
+                                                      </ul>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item text-primary" target="_blank" href="https://www.education.vic.gov.au/parents/services-for-parents/Pages/community-playgroups.aspx">{% trans "More Detail" %} <i class="fas fa-arrow-right"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card shadow mb-2">
+                                              <!-- Card Header - Accordion -->
+                                              <a href="#collapseCard3" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
+                                                  <h6 class="m-0 font-weight-bold text-primary">{% trans "How to choose the best childcare?" %}</h6>
+                                              </a>
+                                              <!-- Card Content - Collapse -->
+                                              <div class="collapse" id="collapseCard3">
+                                                  <div class="card-body">
+                                                      <ul>
+                                                          <p>{% trans "When looking for a childcare make sure that the child care provides:" %}</p>
+                                                          <li>{% trans "Provides your kid with valuable playing and learning opportunities." %}</li>
+                                                          <li>{% trans "Ensure that the relationship between employers and the child is loving and consistent." %}</li>
+                                                          <li>{% trans "Allows kids time to investigate and discover new activities" %}</li>
+                                                          <li>{% trans "Promotes all facets of the wellbeing of your child, including their social , mental, physical and cognitive needs" %}</li>
+                                                          <li>{% trans "Establishes simple and realistic behavioural expectations" %}</li>
+                                                          <li>{% trans "Act with your family in cooperation." %}</li>
+                                                      </ul>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item text-primary" target="_blank" href="https://www.education.vic.gov.au/parents/child-care-kindergarten/Pages/choose-best-child-care.aspx">{% trans "More Detail" %} <i class="fas fa-arrow-right"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card shadow mb-2">
+                                              <!-- Card Header - Accordion -->
+                                              <a href="#collapseCard4" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
+                                                  <h6 class="m-0 font-weight-bold text-primary">{% trans "How to choose a quality childhood service?" %}</h6>
+                                              </a>
+                                              <!-- Card Content - Collapse -->
+                                              <div class="collapse" id="collapseCard4">
+                                                  <div class="card-body">
+                                                      <ul>
+                                                          <li>{% trans "In a scheme called the National Quality Framework, the quality of child care facilities is rated." %}</li>
+                                                          <li>{% trans "Quality child care and kindergarten are critical, much like colleges, because high-quality early education sets young kids up for life." %}</li>
+                                                          <li>{% trans "The National Quality System is structured to increase the quality of programmes for early childhood. Measuring the consistency of facilities is a major priority of the system." %}</li>
+                                                          <li>{% trans "To help them select early education and treatment, this knowledge is provided to families." %}</li>
+                                                          <li>{% trans "The quality of early childhood services is measured against seven quality areas such as Educational program and practice, Children's health and safety, physical environment, Staffing arrangements, Relationships with children, Collaborative partnerships with families and communities, Leadership and service management." %}</li>
+                                                      </ul>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item text-primary" target="_blank" href="https://www.education.vic.gov.au/parents/child-care-kindergarten/Pages/choose-quality-child-care.aspx">{% trans "More Detail" %} <i class="fas fa-arrow-right"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-xl-6 col-md-6">
+                                          <div class="card shadow mb-2">
+                                              <!-- Card Header - Accordion -->
+                                              <a href="#collapseCard5" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
+                                                  <h6 class="m-0 font-weight-bold text-primary">{% trans "Types of childcare" %}</h6>
+                                              </a>
+                                              <!-- Card Content - Collapse -->
+                                              <div class="collapse" id="collapseCard5">
+                                                  <div class="card-body">
+                                                      <ul>
+                                                          <li>{% trans "Long Day care: Open to kids whose families are busy or learning, or who need more time off on a daily basis." %}</li>
+                                                          <li>{% trans "Occasional care: It supports parents with less formal demands, such as the need for an appointment or to relax for two hours." %}</li>
+                                                          <li>{% trans "Family Day Care: Centered in the home of a carer with a very limited number of other kids." %}</li>
+                                                          <li>{% trans "In-Home Care: When in your own house, the caregiver cares for your infant. This is normally referred to as a nanny or au pair." %}</li>
+                                                      </ul>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item text-primary" target="_blank" href="https://www.education.vic.gov.au/parents/child-care-kindergarten/Pages/types-of-child-care.aspx">{% trans "More Detail" %} <i class="fas fa-arrow-right"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card shadow mb-2">
+                                              <!-- Card Header - Accordion -->
+                                              <a href="#collapseCard6" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
+                                                  <h6 class="m-0 font-weight-bold text-primary">{% trans "Enroll in childcare" %}</h6>
+                                              </a>
+                                              <!-- Card Content - Collapse -->
+                                              <div class="collapse" id="collapseCard6">
+                                                  <div class="card-body">
+                                                      <ul>
+                                                          <p>{% trans "You need to register your child after you have selected a child care provider that has a position open that suits your family's needs. Later need to provide all the information of your child such as:" %}</p>
+                                                          <li>{% trans "Name and address of the baby and specifics of any special needs" %}</li>
+                                                          <li>{% trans "Data about you and all other parents , caregivers or guardians" %}</li>
+                                                          <li>{% trans "Information of the entities who will pick your child up" %}</li>
+                                                          <li>{% trans "Birth certificate for the child or other identification records" %}</li>
+                                                          <li>{% trans "Information of any parenting orders or civil issues about your child's treatment or welfare (the details must be kept confidential by the child care service)" %}</li>
+                                                          <li>{% trans "Medical health and immunisation status for your kids." %}</li>
+                                                      </ul>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item text-primary" target="_blank" href="https://www.education.vic.gov.au/parents/child-care-kindergarten/Pages/enrol-in-child-care.aspx">{% trans "More Detail" %} <i class="fas fa-arrow-right"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card shadow mb-2">
+                                              <!-- Card Header - Accordion -->
+                                              <a href="#collapseCard7" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
+                                                  <h6 class="m-0 font-weight-bold text-primary">{% trans "How much does childcare cost?" %}</h6>
+                                              </a>
+                                              <!-- Card Content - Collapse -->
+                                              <div class="collapse" id="collapseCard7">
+                                                  <div class="card-body">
+                                                      <ul>
+                                                          <li>{% trans "Many kindergarten curriculum costs are partially charged directly to the kindergarten by the Victorian government. This keeps fees down and allows kids to have a fun experience with their children." %}</li>
+                                                          <li>{% trans "To better cover the expense of running kindergarten classes, all kindergartens charge fees. Specific kindergartens set rates which focus on factors such as how many hours the child attends and if there are added expenses such as excursions." %}</li>
+                                                          <li>{% trans "For their schedule of payments, call the kindergarten you are involved in. To guarantee a child's spot in the curriculum, several kindergartens call for a nominal fee." %}</li>
+                                                          <li>{% trans "Any kindergartens have services that the Department does not fund, often attracting fees." %}</li>
+                                                      </ul>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item text-primary" target="_blank" href="https://www.education.vic.gov.au/parents/child-care-kindergarten/Pages/how-much-kindergarten-cost.aspx">{% trans "More Detail" %} <i class="fas fa-arrow-right"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="card shadow mb-2">
+                                              <!-- Card Header - Accordion -->
+                                              <a href="#collapseCard8" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
+                                                  <h6 class="m-0 font-weight-bold text-primary">{% trans "Financial help for parents" %}</h6>
+                                              </a>
+                                              <!-- Card Content - Collapse -->
+                                              <div class="collapse" id="collapseCard8">
+                                                  <div class="card-body">
+                                                      <ul>
+                                                          <p>{% trans "If you follow those conditions, you will get financial support with housing and child care expenses." %}</p>
+                                                          <li>{% trans "Help with living costs: Families often unexpectedly find their situations shifting and they are unable to navigate work openings that accommodate their current family commitments easily.There are a variety of services open to the Federal Government to support people who find themselves in financial distress." %}</li>
+                                                          <li>{% trans "Help with Kindergarten Fees: Families who have such concession passes, passports or papers have access to the Kindergarten Fee Subsidy.For Aboriginal or Torres Strait Islander students, or students who have had experience with child welfare, Early Start Kindergarten is a free or low-cost kindergarten." %}</li>
+                                                      </ul>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item text-primary" target="_blank" href="https://www.education.vic.gov.au/parents/services-for-parents/Pages/financial-help.aspx">{% trans "More Detail" %} <i class="fas fa-arrow-right"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.container-fluid -->
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      {% include "component/footer.html" %}
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+{% include "component/script.html" %}
+
+</body>
+
+</html>

@@ -1,0 +1,809 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-27 04:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Language: zh\n"
+"X-Source-Language: C\n"
+
+#: careforyou/API/ajax_check_added.py:22
+msgid "Already in the SaveList"
+msgstr "已在保存列表中"
+
+#: careforyou/API/ajax_check_added.py:26 templates/detail.html:45
+msgid "Add to the SaveList"
+msgstr "加入保存列表"
+
+#: careforyou/API/download_list.py:22
+msgid "ERROR: The savelist is empty."
+msgstr "错误：保存列表是空的。"
+
+#: templates/404.html:7 templates/error.html:7 templates/result.html:8
+msgid "Search Result | Careforyou"
+msgstr "搜索结果 | Careforyou"
+
+#: templates/404.html:34
+msgid "Childcare Not found"
+msgstr "没有找到育儿服务"
+
+#: templates/404.html:35
+msgid "There are no childcare services for"
+msgstr "没有您想要的育儿服务"
+
+#: templates/404.html:36
+msgid "&larr; Back to Home"
+msgstr "&larr; 返回主页"
+
+#: templates/about.html:8
+msgid "About Us | Careforyou"
+msgstr "关于我们 | Careforyou"
+
+#: templates/about.html:36
+msgid "About us"
+msgstr "关于我们"
+
+#: templates/about.html:43
+msgid "This Project"
+msgstr "项目简介"
+
+#: templates/about.html:52
+msgid ""
+"CareForYou aims to solve the problem faced by some First Generation "
+"Australians whose parent parents are working and whose native language is "
+"not English while growing up in Australia is that they find it difficult to "
+"understand and speak English as a second language early on in their lives, "
+"specially at school and day care."
+msgstr ""
+"CareForYou旨在解决一些第一代澳大利亚人所面临的问题，他们的父母父母正在工作并且在澳大利亚长大时的母语不是英语，这是因为他们发现他们一生中很难以英语作为第二语言来理解和说英语， "
+"特别是在学校和日托中。"
+
+#: templates/about.html:54
+#, python-format
+msgid ""
+"According to the Australian Bureau of Statistics from the 2011 census it is "
+"been said that almost 67%% of the recent arrivals to Australia spoke a "
+"language other than English at home. Further, only 43%% of the recent "
+"arrivals reported that they spoke English well."
+msgstr ""
+"根据澳大利亚统计局（Australian Bureau of Statistics）2011年的人口普查，据说最近到澳大利亚的人中有67 "
+"%%的人在家中使用的语言不是英语。 此外，只有43 %%的新移民表示他们的英语说得很好。"
+
+#: templates/about.html:69
+msgid "Our Team"
+msgstr "我们的团队"
+
+#: templates/about.html:79
+msgid "Santosh Reddy"
+msgstr ""
+
+#: templates/about.html:80 templates/about.html:94
+msgid "Master of Data Science"
+msgstr "数据科学硕士"
+
+#: templates/about.html:81
+msgid ""
+"Actively building my career in the field of Data Science, skilled in "
+"collecting, wrangling, analyzing and interpreting large datasets, developing "
+"new models."
+msgstr "积极建立我在数据科学领域的职业，擅长收集，整理，分析和解释大型数据集，开发新模型。"
+
+#: templates/about.html:86
+msgid "Abhinav Kapoor"
+msgstr ""
+
+#: templates/about.html:87
+msgid "Master of Business Information Systems"
+msgstr "商业信息系统硕士"
+
+#: templates/about.html:88
+msgid ""
+"I am a Business Analyst from India who aspires to work in the Data Analytics "
+"domain to find and solve inefficient business processes."
+msgstr "我是一位来自印度的业务分析师，渴望在数据分析领域工作，以发现和解决效率低下的业务流程。"
+
+#: templates/about.html:93
+msgid "Zhenyu Liu"
+msgstr ""
+
+#: templates/about.html:95
+msgid ""
+"Always being active and like to try new things and enjoy the journey of "
+"learning new stuff."
+msgstr "始终保持活跃并喜欢尝试新事物，并喜欢学习新事物的过程。"
+
+#: templates/about.html:100
+msgid "Haoqi Xu"
+msgstr ""
+
+#: templates/about.html:101
+msgid "Master of Information Technology"
+msgstr "信息技术硕士"
+
+#: templates/about.html:102
+msgid ""
+"I am enjoy to learn new skills and use my existing skills to implement "
+"projects with my team members."
+msgstr "我很高兴学习新技能，并利用现有技能与团队成员一起实施项目。"
+
+#: templates/component/footer.html:5
+msgid "Dependencies"
+msgstr "本网站依赖于"
+
+#: templates/component/footer.html:23
+msgid "Design and Developed by Team Agileport from Monash University."
+msgstr "由莫纳什大学的Agileport团队设计和开发。"
+
+#: templates/component/footer.html:27
+msgid "Copyright &copy; Careforyou 2020"
+msgstr "版权所有 &copy; Careforyou 2020"
+
+#: templates/component/sidebar.html:18
+msgid "Home"
+msgstr "主页"
+
+#: templates/component/sidebar.html:26
+msgid "Information"
+msgstr "育儿信息"
+
+#: templates/component/sidebar.html:32
+msgid "About"
+msgstr "关于"
+
+#: templates/component/topbar.html:12 templates/component/topbar.html:32
+msgid "Suburb Name or Postcode..."
+msgstr "地区名称或邮编..."
+
+#: templates/component/topbar.html:50 templates/component/topbar.html:58
+#: templates/savelist2.html:43
+msgid "SaveList"
+msgstr "保存列表"
+
+#: templates/component/topbar.html:70
+msgid "Clear the List"
+msgstr "清空列表"
+
+#: templates/component/topbar.html:74
+msgid "Download the List"
+msgstr "下载列表"
+
+#: templates/component/topbar.html:83
+msgid "Clear the list?"
+msgstr "清空列表？"
+
+#: templates/component/topbar.html:88
+msgid "Do you want to clear your SaveList?"
+msgstr "你想清空保存列表吗？"
+
+#: templates/component/topbar.html:90 templates/detail.html:389
+msgid "Cancel"
+msgstr "取消"
+
+#: templates/component/topbar.html:91
+msgid "Clear"
+msgstr "清空"
+
+#: templates/detail.html:9
+msgid "Childcare Details | Careforyou"
+msgstr "详细信息 | Careforyou"
+
+#: templates/detail.html:42
+msgid "Childcare Details"
+msgstr "详细信息"
+
+#: templates/detail.html:67
+msgid "Quality Stars"
+msgstr "质量等级"
+
+#: templates/detail.html:74
+msgid "About the Rating"
+msgstr "关于等级"
+
+#: templates/detail.html:76
+msgid ""
+"We use National Quality Standard Here. The National Quality Standard sets a "
+"benchmark for the quality of all education and care services across "
+"Australia."
+msgstr "我们在这里使用国家质量标准(NQS)。 国家质量标准为澳大利亚所有教育和护理服务的质量设定了基准。"
+
+#: templates/detail.html:79 templates/detail.html:193
+msgid "More details"
+msgstr "更多细节"
+
+#: templates/detail.html:98
+msgid "Contact Information"
+msgstr "联系方式"
+
+#: templates/detail.html:105 templates/result.html:52
+msgid "Address"
+msgstr "地址"
+
+#: templates/detail.html:117
+msgid "Phone"
+msgstr "电话"
+
+#: templates/detail.html:127
+msgid "Email"
+msgstr "邮件"
+
+#: templates/detail.html:137
+msgid "Fax"
+msgstr "传真"
+
+#: templates/detail.html:144
+msgid "Language Program"
+msgstr "语言项目"
+
+#: templates/detail.html:153 templates/detail.html:184
+msgid "Early Childhood Language Program"
+msgstr "童年早期语言计划"
+
+#: templates/detail.html:157 templates/detail.html:188
+msgid "About Early Childhood Language Program"
+msgstr "关于童年早期语言计划"
+
+#: templates/detail.html:159 templates/detail.html:190
+msgid ""
+"The Victorian Government has allocated $17.9 million over four years "
+"(2019-2022) for the Early Childhood Language Program. It consists of two "
+"program modes: the Learn Languages at Kindergarten Program and Bilingual "
+"Kindergartens."
+msgstr ""
+"维多利亚州政府已在四年内（2019-2022年）为早期儿童语言计划拨款1,790万元。 它包含两种程序模式：“幼儿园学习语言”程序和“双语幼儿园”。"
+
+#: templates/detail.html:168
+msgid "Program Highlight"
+msgstr "项目亮点"
+
+#: templates/detail.html:204
+msgid "Comments and Reviews"
+msgstr "评论和评价"
+
+#: templates/detail.html:205
+msgid "Powered by Google Places"
+msgstr "由Google Places提供支持"
+
+#: templates/detail.html:245
+#| msgid "Quailty Ratings"
+msgid "Quality Ratings"
+msgstr "质量等级"
+
+#: templates/detail.html:246
+msgid "Based on NQS by ACECQA"
+msgstr "基于ACECQA的NQS"
+
+#: templates/detail.html:249 templates/detail.html:256
+msgid "Educational program and practice"
+msgstr "教育计划与实践"
+
+#: templates/detail.html:257
+msgid ""
+"Educational program and practice of educators are child-centred, stimulating "
+"and maximise opportunities for enhancing and extending each child’s learning "
+"and development."
+msgstr "教育者的教育计划和实践以儿童为中心，激发并最大程度地增强和扩展每个孩子的学习和发展机会。"
+
+#: templates/detail.html:264 templates/detail.html:271
+msgid "Children’s health and safety"
+msgstr "儿童的健康与安全"
+
+#: templates/detail.html:272
+msgid ""
+"Children have the right to experience quality education and care in an "
+"environment that safeguards and promotes their health, safety and wellbeing."
+msgstr "儿童有权在维护和增进其健康，安全和福祉的环境中接受优质的教育和照料。"
+
+#: templates/detail.html:279 templates/detail.html:286
+msgid "Physical environment"
+msgstr "物理环境"
+
+#: templates/detail.html:287
+msgid ""
+"Physical environment is safe, suitable and provides a rich and diverse range "
+"of experiences that promote children’s learning and development."
+msgstr "物理环境是安全的，合适的，并提供了丰富多样的体验，可促进儿童的学习和发展。"
+
+#: templates/detail.html:294 templates/detail.html:301
+msgid "Staffing arrangements"
+msgstr "人员安排"
+
+#: templates/detail.html:302
+msgid ""
+"Qualified and experienced educators, who develop warm, respectful "
+"relationships with children, create predictable environments and encourage "
+"children’s active engagement in the learning program."
+msgstr "合格且经验丰富的教育者，他们与孩子建立温暖，相互尊重的关系，创造可预测的环境，并鼓励孩子积极参与学习计划。"
+
+#: templates/detail.html:309 templates/detail.html:316
+msgid "Relationships with children"
+msgstr "与孩子的关系"
+
+#: templates/detail.html:317
+msgid ""
+"Relationships with children are responsive, respectful and promote "
+"children’s sense of security and belonging."
+msgstr "与孩子的关系是敏感，尊重和促进孩子的安全感和归属感。"
+
+#: templates/detail.html:324 templates/detail.html:331
+msgid "Collaborative partnerships with families and communities"
+msgstr "与家庭和社区的合作伙伴关系"
+
+#: templates/detail.html:332
+msgid ""
+"Collaborative relationships with families are fundamental to achieving "
+"quality outcomes for children, and community partnerships based on active "
+"communication, consultation and collaboration are essential."
+msgstr "与家庭的合作关系是实现儿童高质量成果的基础，基于积极沟通，协商和合作的社区伙伴关系至关重要。"
+
+#: templates/detail.html:339 templates/detail.html:346
+msgid "Governance and leadership"
+msgstr "治理与领导"
+
+#: templates/detail.html:347
+msgid ""
+"Effective leadership and governance of the service contributes to quality "
+"environments for children’s learning and development. Effective leaders "
+"establish shared values for the service and set clear direction for the "
+"service’s continuous improvement."
+msgstr "有效的服务领导和治理有助于为儿童的学习和发展创造良好的环境。 有效的领导者会为服务建立共同的价值观，并为服务的持续改进设定明确的方向。"
+
+#: templates/detail.html:382
+msgid "Add to the SaveList?"
+msgstr "加入保存列表吗？"
+
+#: templates/detail.html:387
+msgid "Do you want to add the current childcare to your SaveList?"
+msgstr "你想添加当前育儿中心到保存列表吗？"
+
+#: templates/detail.html:390
+msgid "Add"
+msgstr "添加"
+
+#: templates/error.html:32
+msgid "Password not correct"
+msgstr "密码不正确"
+
+#: templates/error.html:33
+msgid "&larr; Please enter again"
+msgstr "请再次输入"
+
+#: templates/information.html:8
+msgid "Information | Careforyou"
+msgstr "育儿信息 | Careforyou"
+
+#: templates/information.html:37
+msgid "Information for Childcare"
+msgstr "关于育儿服务的信息"
+
+#: templates/information.html:46
+msgid "COVID-19 Information"
+msgstr "关于新型冠状病毒(COVID-19)的信息"
+
+#: templates/information.html:47
+msgid ""
+"This link contains the latest information from Victorian Government, "
+"Department of Education and Training regarding childcare for Victorian "
+"Parents.It also contains the latest advice regarding Coronavirus (COVID-19)"
+msgstr "此链接包含维多利亚州政府教育和培训部提供的有关维多利亚州父母的托儿服务的最新信息。 它还包含有关新型冠状病毒（COVID-19）的最新建议。"
+
+#: templates/information.html:48
+msgid "Learn More"
+msgstr "学习更多"
+
+#: templates/information.html:59
+msgid "Practical Information for Victorian Parents"
+msgstr "维多利亚家长的实用信息"
+
+#: templates/information.html:60
+msgid ""
+"These are the detailed information for the parents step by step process of "
+"how to find and enroll his child in childcare."
+msgstr "这些是为父母提供的详细信息，其中包括如何查找和为其子女加入托儿所的逐步过程。"
+
+#: templates/information.html:67
+msgid "Early parenting centers"
+msgstr "早期育儿中心"
+
+#: templates/information.html:73
+msgid ""
+"Early parenting centers provide a number of different services where their "
+"main agenda is to help parents who require additional support to take care "
+"of their kids."
+msgstr "早期育儿中心提供许多不同的服务，其主要日程安排是帮助需要额外支持的父母照顾孩子。"
+
+#: templates/information.html:74
+msgid ""
+"They are mainly focused on building ability and talents for parenting, "
+"enhancing the bond between parent and child, Strengthening the relation of a "
+"family to their culture and Assessing the mental health of children."
+msgstr "他们的重点是培养父母的能力和才能，增强父母与孩子之间的纽带，加强家庭与其文化的联系，以及评估儿童的心理健康。"
+
+#: templates/information.html:75
+msgid ""
+"Most of these services are accessible for parents who have a kid right from "
+"the pregnancy till the child grows to 4 years of age, and as a kid he "
+"requires extra help to learn skills and grow up."
+msgstr "从怀孕到孩子长大到4岁的父母都可以使用其中的大多数服务，而在孩子时期，他需要额外的帮助来学习技能和成长。"
+
+#: templates/information.html:78 templates/information.html:96
+#: templates/information.html:118 templates/information.html:138
+#: templates/information.html:159 templates/information.html:181
+#: templates/information.html:200 templates/information.html:218
+msgid "More Detail"
+msgstr "更多细节"
+
+#: templates/information.html:85
+msgid "Community playgroups"
+msgstr "社区游戏组"
+
+#: templates/information.html:91
+msgid ""
+"This is a fun group gathering where parents and children under the school "
+"age meet up."
+msgstr "这是一个有趣的团体聚会，学龄以下的父母和孩子聚会。"
+
+#: templates/information.html:92
+msgid ""
+"It’s usually parents who organize these events for kids to interact with "
+"each other and find friends and the childs gets a place to play with his "
+"other friends ,meet different people from different cultures."
+msgstr "通常由父母来组织这些活动，让孩子们彼此互动并找到朋友，然后孩子们就可以与其他朋友一起玩耍，结识来自不同文化背景的不同人。"
+
+#: templates/information.html:93
+msgid ""
+"There is usually a base fee for these community gatherings to compensate for "
+"the cost to organise the event."
+msgstr "这些社区聚会通常需要支付基本费用，以补偿组织此次活动的费用。"
+
+#: templates/information.html:103
+msgid "How to choose the best childcare?"
+msgstr "如何选择最佳的育儿中心？"
+
+#: templates/information.html:109
+msgid "When looking for a childcare make sure that the child care provides:"
+msgstr "寻找托儿服务时，请确保托儿服务提供："
+
+#: templates/information.html:110
+msgid "Provides your kid with valuable playing and learning opportunities."
+msgstr "为您的孩子提供宝贵的游戏和学习机会。"
+
+#: templates/information.html:111
+msgid ""
+"Ensure that the relationship between employers and the child is loving and "
+"consistent."
+msgstr "确保员工与孩子之间的关系是充满爱心和一贯的。"
+
+#: templates/information.html:112
+msgid "Allows kids time to investigate and discover new activities"
+msgstr "让孩子有时间调查和发现新活动"
+
+#: templates/information.html:113
+msgid ""
+"Promotes all facets of the wellbeing of your child, including their social , "
+"mental, physical and cognitive needs"
+msgstr "促进孩子幸福的所有方面，包括他们的社会，心理，身体和认知需求"
+
+#: templates/information.html:114
+msgid "Establishes simple and realistic behavioural expectations"
+msgstr "建立简单而现实的行为期望"
+
+#: templates/information.html:115
+msgid "Act with your family in cooperation."
+msgstr "与您的家人一起行动。"
+
+#: templates/information.html:125
+msgid "How to choose a quality childhood service?"
+msgstr "如何选择优质的童年服务？"
+
+#: templates/information.html:131
+msgid ""
+"In a scheme called the National Quality Framework, the quality of child care "
+"facilities is rated."
+msgstr "在一项称为“国家质量框架”的计划中，对托儿设施的质量进行了评级。"
+
+#: templates/information.html:132
+msgid ""
+"Quality child care and kindergarten are critical, much like colleges, "
+"because high-quality early education sets young kids up for life."
+msgstr "像大学一样，优质的儿童保育和幼儿园至关重要，因为高质量的早期教育可以使幼儿终身受益。"
+
+#: templates/information.html:133
+msgid ""
+"The National Quality System is structured to increase the quality of "
+"programmes for early childhood. Measuring the consistency of facilities is a "
+"major priority of the system."
+msgstr "国家质量体系的结构旨在提高幼儿计划的质量。 测量设施的一致性是系统的主要优先事项。"
+
+#: templates/information.html:134
+msgid ""
+"To help them select early education and treatment, this knowledge is "
+"provided to families."
+msgstr "为了帮助他们选择早期教育和治疗方法，将这些知识提供给家庭。"
+
+#: templates/information.html:135
+msgid ""
+"The quality of early childhood services is measured against seven quality "
+"areas such as Educational program and practice, Children's health and "
+"safety, physical environment, Staffing arrangements, Relationships with "
+"children, Collaborative partnerships with families and communities, "
+"Leadership and service management."
+msgstr ""
+"幼儿服务的质量是根据七个质量领域衡量的，例如教育计划和实践，儿童的健康和安全，身体环境，人员安排，与儿童的关系，与家庭和社区的合作伙伴关系，领导力和服务管理。"
+
+#: templates/information.html:147
+msgid "Types of childcare"
+msgstr "育儿中心的类型"
+
+#: templates/information.html:153
+msgid ""
+"Long Day care: Open to kids whose families are busy or learning, or who need "
+"more time off on a daily basis."
+msgstr "长日托：开放给家庭忙碌或学习或每天需要更多时间休息的孩子。"
+
+#: templates/information.html:154
+msgid ""
+"Occasional care: It supports parents with less formal demands, such as the "
+"need for an appointment or to relax for two hours."
+msgstr "临时护理：它为那些没有正式要求的父母提供支持，例如需要预约或放松两个小时。"
+
+#: templates/information.html:155
+msgid ""
+"Family Day Care: Centered in the home of a carer with a very limited number "
+"of other kids."
+msgstr "家庭日托：集中在照顾者的家中，其他孩子数量很少。"
+
+#: templates/information.html:156
+msgid ""
+"In-Home Care: When in your own house, the caregiver cares for your infant. "
+"This is normally referred to as a nanny or au pair."
+msgstr "居家护理：当您在家中时，护理人员会照料您的婴儿。 这通常被称为保姆或换工。"
+
+#: templates/information.html:166
+msgid "Enroll in childcare"
+msgstr "报名参加育儿"
+
+#: templates/information.html:172
+msgid ""
+"You need to register your child after you have selected a child care "
+"provider that has a position open that suits your family's needs. Later need "
+"to provide all the information of your child such as:"
+msgstr "选择了适合您家庭需要的职位的托儿服务提供者后，您需要为孩子注册。然后需要提供您孩子的所有信息，例如："
+
+#: templates/information.html:173
+msgid "Name and address of the baby and specifics of any special needs"
+msgstr "孩子的姓名和地址以及任何特殊需要的细节"
+
+#: templates/information.html:174
+msgid "Data about you and all other parents , caregivers or guardians"
+msgstr "有关您和所有其他父母，照顾者或监护人的信息"
+
+#: templates/information.html:175
+msgid "Information of the entities who will pick your child up"
+msgstr "将接送您的孩子的监护人的信息"
+
+#: templates/information.html:176
+msgid "Birth certificate for the child or other identification records"
+msgstr "儿童的出生证明或其他身份证明记录"
+
+#: templates/information.html:177
+msgid ""
+"Information of any parenting orders or civil issues about your child's "
+"treatment or welfare (the details must be kept confidential by the child "
+"care service)"
+msgstr "有关您孩子的待遇或福利的任何育儿命令或民事问题的信息（详细信息必须由儿童保育机构保密）"
+
+#: templates/information.html:178
+msgid "Medical health and immunisation status for your kids."
+msgstr "您孩子的医疗健康状况和免疫状况。"
+
+#: templates/information.html:188
+msgid "How much does childcare cost?"
+msgstr "托儿费用多少？"
+
+#: templates/information.html:194
+msgid ""
+"Many kindergarten curriculum costs are partially charged directly to the "
+"kindergarten by the Victorian government. This keeps fees down and allows "
+"kids to have a fun experience with their children."
+msgstr "维多利亚州政府将许多幼儿园的课程费用直接向幼儿园收取。 这样可以降低费用，并让孩子们与孩子们一起玩得开心。"
+
+#: templates/information.html:195
+msgid ""
+"To better cover the expense of running kindergarten classes, all "
+"kindergartens charge fees. Specific kindergartens set rates which focus on "
+"factors such as how many hours the child attends and if there are added "
+"expenses such as excursions."
+msgstr "为了更好地支付开办幼儿园班的费用，所有幼儿园都收取费用。 特定的幼儿园设置费率时会考虑一些因素，例如孩子上学时间长短以及游览等额外费用。"
+
+#: templates/information.html:196
+msgid ""
+"For their schedule of payments, call the kindergarten you are involved in. "
+"To guarantee a child's spot in the curriculum, several kindergartens call "
+"for a nominal fee."
+msgstr "对于他们的付款时间表，请致电您所参与的幼儿园。为了保证孩子在课程表中的位置，一些幼儿园要求收取象征性费用。"
+
+#: templates/information.html:197
+msgid ""
+"Any kindergartens have services that the Department does not fund, often "
+"attracting fees."
+msgstr "任何幼儿园所提供的服务都是教育部不提供的，通常会收取费用。"
+
+#: templates/information.html:207
+msgid "Financial help for parents"
+msgstr "给父母的经济帮助"
+
+#: templates/information.html:213
+msgid ""
+"If you follow those conditions, you will get financial support with housing "
+"and child care expenses."
+msgstr "如果您符合这些条件，您将获得住房和育儿费用方面的财务支持。"
+
+#: templates/information.html:214
+msgid ""
+"Help with living costs: Families often unexpectedly find their situations "
+"shifting and they are unable to navigate work openings that accommodate "
+"their current family commitments easily.There are a variety of services open "
+"to the Federal Government to support people who find themselves in financial "
+"distress."
+msgstr ""
+"降低生活成本：家庭常常出乎意料地发现他们的处境正在发生变化，他们无法轻松浏览适应当前家庭承诺的工作空缺。联邦政府提供了多种服务，以帮助那些陷入财务困境的人们。"
+
+#: templates/information.html:215
+msgid ""
+"Help with Kindergarten Fees: Families who have such concession passes, "
+"passports or papers have access to the Kindergarten Fee Subsidy.For "
+"Aboriginal or Torres Strait Islander students, or students who have had "
+"experience with child welfare, Early Start Kindergarten is a free or "
+"low-cost kindergarten."
+msgstr ""
+"幼儿园费用帮助：拥有此类优惠通行证，护照或证件的家庭可以使用幼儿园费用补贴。对于原住民或托雷斯海峡岛民的学生或有儿童福利经验的学生，“早期开始幼儿园”是免费的或选择低收费的幼儿园。"
+
+#: templates/landing.html:8
+msgid "Home | Careforyou"
+msgstr "主页 | Careforyou"
+
+#: templates/landing.html:72
+msgid "Find the Childcare Services Nearby"
+msgstr "寻找周围的育儿服务"
+
+#: templates/landing.html:77
+msgid "Suburb Name or Postcode"
+msgstr "地区名称或邮编"
+
+#: templates/landing.html:80
+msgid "Search"
+msgstr "搜索"
+
+#: templates/landing.html:85
+msgid "(Optional)Choose a language for your childcare services:"
+msgstr "(可选)为你的育儿服务选择语言："
+
+#: templates/landing.html:107
+msgid "Explore Nearby"
+msgstr "探索附近"
+
+#: templates/landing.html:108
+msgid ""
+"Find Bilingual Childcare Services near you fluent in your native language."
+msgstr "查找能说流利母语的双语儿童保育服务。"
+
+#: templates/landing.html:116
+msgid "Save Suitable Services"
+msgstr "保存合适的服务"
+
+#: templates/landing.html:117
+msgid ""
+"Download the information of centres that you find suitable. No need to "
+"create an account or login."
+msgstr "下载您认为合适的服务信息。 无需创建帐户或登录。"
+
+#: templates/landing.html:125
+msgid "Childcare Policies"
+msgstr "育儿政策"
+
+#: templates/landing.html:126
+msgid "Find the information related to childcare policies in Australia."
+msgstr "查找与澳大利亚育儿政策有关的信息。"
+
+#: templates/landing.html:136
+msgid "News and Articles"
+msgstr "新闻和文章"
+
+#: templates/landing.html:150
+msgid "Posted by&nbsp;"
+msgstr "由&nbsp;"
+
+#: templates/landing.html:150
+msgid " at "
+msgstr " 发布于 "
+
+#: templates/result.html:38
+msgid "Search Result"
+msgstr "搜索结果"
+
+#: templates/result.html:39
+msgid "Found"
+msgstr "找到"
+
+#: templates/result.html:39
+msgid "Childcare services for"
+msgstr "个育儿服务关于"
+
+#: templates/result.html:50
+msgid "Name"
+msgstr "名称"
+
+#: templates/result.html:51
+msgid "Suburb"
+msgstr "地区"
+
+#: templates/result.html:53
+msgid "Language"
+msgstr "语言"
+
+#: templates/result.html:127
+msgid "Get Details..."
+msgstr "详细信息..."
+
+#: templates/savelist2.html:48
+msgid "Childcare Name:"
+msgstr "育儿服务名称："
+
+#: templates/savelist2.html:49
+msgid "Suburb:"
+msgstr "地区："
+
+#: templates/savelist2.html:50
+msgid "Address:"
+msgstr "地址："
+
+#: templates/savelist2.html:51
+msgid "Phone:"
+msgstr "电话："
+
+#: templates/savelist2.html:52
+msgid "Email:"
+msgstr "邮件："
+
+#: templates/savelist2.html:53
+msgid "Fax:"
+msgstr "传真："
+
+#: templates/savelist2.html:54
+msgid "Language:"
+msgstr "语言："
+
+#~ msgid "Regulation"
+#~ msgstr "法规与政策"
+
+#~ msgid "Suburb Name..."
+#~ msgstr "地区名称..."
+
+#~ msgid "Regulation and Policy | Careforyou"
+#~ msgstr "法规及政策 | Careforyou"
+
+#~ msgid "Regulation and Policy"
+#~ msgstr "法规与政策"
+
+#~ msgid "Later need to provide all the information of your child such as:"
+#~ msgstr "然后需要提供您孩子的所有信息，例如："
+
+#~ msgid "Save List"
+#~ msgstr "保存列表"
+
+#~| msgid "Enter your Suburb ..."
+#~ msgid "Enter your Suburb or Postcode..."
+#~ msgstr "输入你的地区或邮编..."

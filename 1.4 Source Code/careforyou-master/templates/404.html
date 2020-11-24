@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load i18n %}
+<head>
+    {% include "component/meta.html" %}
+  <title>{% trans "Search Result | Careforyou" %}</title>
+    {% include "component/css.html" %}
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    {% include "component/sidebar.html" %}
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        {% include "component/topbar.html" %}
+        <!-- End of Topbar -->
+        <!-- Begin Page Content -->
+         <!-- 404 Error Text -->
+        <div class="container-fluid">
+          <div class="text-center">
+            <div class="error mx-auto" data-text="404">404</div>
+            <p class="lead text-gray-800 mb-2">{% trans "Childcare Not found" %}</p>
+            <p class="text-gray-500 mb-5">{% trans "There are no childcare services for" %} "{{ suburb }}" and "{{ language }}"</p>
+            <a href="\">{% trans "&larr; Back to Home" %}</a>
+          </div>
+        </div>
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      {% include "component/footer.html" %}
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  {% include "component/script.html" %}
+</body>
+
+</html>

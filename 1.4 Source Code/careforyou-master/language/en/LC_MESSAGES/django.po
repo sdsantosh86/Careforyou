@@ -1,0 +1,341 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-12 05:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: careforyou/View/detail_view.py:78
+msgid "ERROR: The savelist is empty."
+msgstr ""
+
+#: templates/about.html:12
+msgid "About Us | Careforyou"
+msgstr ""
+
+#: templates/about.html:49
+msgid "About us"
+msgstr ""
+
+#: templates/about.html:56
+msgid "This Project"
+msgstr ""
+
+#: templates/about.html:65
+msgid ""
+"CareForYou aims to solve the problem faced by some First Generation "
+"Australians whose parent parents are working and whose native language is "
+"not English while growing up in Australia is that they find it difficult to "
+"understand and speak English as a second language early on in their lives, "
+"specially at school and day care."
+msgstr ""
+
+#: templates/about.html:67
+#, python-format
+msgid ""
+"According to the Australian Bureau of Statistics from the 2011 census it is "
+"been said that almost 67%% of the recent arrivals to Australia spoke a "
+"language other than English at home. Further, only 43%% of the recent "
+"arrivals reported that they spoke English well."
+msgstr ""
+
+#: templates/about.html:82
+msgid "Our Team"
+msgstr ""
+
+#: templates/about.html:92
+msgid "Santosh Reddy"
+msgstr ""
+
+#: templates/about.html:93 templates/about.html:107
+msgid "Master of Data Science"
+msgstr ""
+
+#: templates/about.html:94
+msgid ""
+"Actively building my career in the field of Data Science, skilled in "
+"collecting, wrangling, analyzing and interpreting large datasets, developing "
+"new models."
+msgstr ""
+
+#: templates/about.html:99
+msgid "Abhinav Kapoor"
+msgstr ""
+
+#: templates/about.html:100
+msgid "Master of Business Information Systems"
+msgstr ""
+
+#: templates/about.html:101
+msgid ""
+"I am a Business Analyst from India who aspires to work in the Data Analytics "
+"domain to find and solve inefficient business processes."
+msgstr ""
+
+#: templates/about.html:106
+msgid "Zhenyu Liu"
+msgstr ""
+
+#: templates/about.html:108
+msgid ""
+"Always being active and like to try new things and enjoy the journey of "
+"learning new stuff."
+msgstr ""
+
+#: templates/about.html:113
+msgid "Haoqi Xu"
+msgstr ""
+
+#: templates/about.html:114
+msgid "Master of Information Technology"
+msgstr ""
+
+#: templates/about.html:115
+msgid ""
+"I am enjoy to learn new skills and use my existing skills to implement "
+"projects with my team members."
+msgstr ""
+
+#: templates/component/footer.html:5
+msgid "Dependencies"
+msgstr ""
+
+#: templates/component/footer.html:23
+msgid "Design and Developed by Team Agileport from Monash University."
+msgstr ""
+
+#: templates/component/footer.html:27
+msgid "Copyright &copy; Careforyou 2020"
+msgstr ""
+
+#: templates/component/sidebar.html:18
+msgid "Home"
+msgstr ""
+
+#: templates/component/sidebar.html:26
+msgid "Regulation"
+msgstr ""
+
+#: templates/component/sidebar.html:32
+msgid "About"
+msgstr ""
+
+#: templates/component/topbar.html:12
+msgid "Suburb Name or Postcode..."
+msgstr ""
+
+#: templates/component/topbar.html:32
+msgid "Suburb Name..."
+msgstr ""
+
+#: templates/component/topbar.html:50
+msgid "SaveList"
+msgstr ""
+
+#: templates/component/topbar.html:58
+msgid "Save List"
+msgstr ""
+
+#: templates/component/topbar.html:70
+msgid "Clear the List"
+msgstr ""
+
+#: templates/component/topbar.html:74
+msgid "Download the List"
+msgstr ""
+
+#: templates/component/topbar.html:83
+msgid "Clear the list?"
+msgstr ""
+
+#: templates/component/topbar.html:88
+msgid "Do you want to clear your savelist?"
+msgstr ""
+
+#: templates/component/topbar.html:90 templates/detail.html:335
+msgid "Cancel"
+msgstr ""
+
+#: templates/component/topbar.html:91
+msgid "Clear"
+msgstr ""
+
+#: templates/detail.html:13
+msgid "Childcare Details | Careforyou"
+msgstr ""
+
+#: templates/detail.html:57
+msgid "Childcare Details"
+msgstr ""
+
+#: templates/detail.html:59
+msgid "Add to Save List"
+msgstr ""
+
+#: templates/detail.html:80
+msgid "Quality Stars"
+msgstr ""
+
+#: templates/detail.html:86
+msgid "About the Rating"
+msgstr ""
+
+#: templates/detail.html:93
+msgid "More details"
+msgstr ""
+
+#: templates/detail.html:112
+msgid "Contact Information"
+msgstr ""
+
+#: templates/detail.html:119
+msgid "Address"
+msgstr ""
+
+#: templates/detail.html:131
+msgid "Phone"
+msgstr ""
+
+#: templates/detail.html:141
+msgid "Email"
+msgstr ""
+
+#: templates/detail.html:151
+msgid "Fax"
+msgstr ""
+
+#: templates/detail.html:158
+msgid "Language Program"
+msgstr ""
+
+#: templates/detail.html:167
+msgid "Early childhood Language Program"
+msgstr ""
+
+#: templates/detail.html:184
+msgid "Program Highlight"
+msgstr ""
+
+#: templates/detail.html:222
+msgid "Comments and Reviews"
+msgstr ""
+
+#: templates/detail.html:262
+msgid "Quailty Ratings"
+msgstr ""
+
+#: templates/detail.html:265
+msgid "Educational program and practice"
+msgstr ""
+
+#: templates/detail.html:270
+msgid "Children’s health and safety"
+msgstr ""
+
+#: templates/detail.html:275
+msgid "Physical environment"
+msgstr ""
+
+#: templates/detail.html:280
+msgid "Staffing arrangements"
+msgstr ""
+
+#: templates/detail.html:285
+msgid "Relationships with children"
+msgstr ""
+
+#: templates/detail.html:290
+msgid "Collaborative partnerships with families and communities"
+msgstr ""
+
+#: templates/detail.html:295
+msgid "Governance and leadership"
+msgstr ""
+
+#: templates/detail.html:333
+msgid "Do you want to add the current childcare to your savelist?"
+msgstr ""
+
+#: templates/detail.html:336
+msgid "Add"
+msgstr ""
+
+#: templates/landing.html:12
+msgid "Home | Careforyou"
+msgstr ""
+
+#: templates/landing.html:48
+msgid "Find the Childcare services Nearby"
+msgstr ""
+
+#: templates/landing.html:53
+msgid "Enter your Suburb or Postcode..."
+msgstr ""
+
+#: templates/landing.html:56
+msgid "Search"
+msgstr ""
+
+#: templates/landing.html:61
+msgid "(Optional)Choose a language for your childcare services:"
+msgstr ""
+
+#: templates/landing.html:81
+msgid "Explore Nearby"
+msgstr ""
+
+#: templates/landing.html:82
+msgid ""
+"Find Bilingual Childcare Services near you fluent in your native language."
+msgstr ""
+
+#: templates/landing.html:90
+msgid "Save Suitable Services"
+msgstr ""
+
+#: templates/landing.html:91
+msgid ""
+"Download the information of centres that you find suitable. No need to "
+"create an account or login."
+msgstr ""
+
+#: templates/landing.html:99
+msgid "Childcare Policies"
+msgstr ""
+
+#: templates/landing.html:100
+msgid "Find the information related to childcare policies in Australia."
+msgstr ""
+
+#: templates/landing.html:108
+msgid "News and Articles"
+msgstr ""
+
+#: templates/landing.html:122
+msgid "Posted by&nbsp;"
+msgstr ""
+
+#: templates/landing.html:122
+msgid " at "
+msgstr ""
+
+#: templates/regulation.html:12
+msgid "Regulation and Policy | Careforyou"
+msgstr ""
+
+#: templates/regulation.html:51
+msgid "Regulation and Policy"
+msgstr ""

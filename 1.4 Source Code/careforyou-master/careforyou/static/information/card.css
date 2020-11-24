@@ -1,0 +1,13 @@
+.bkg{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius:.35rem;
+    background-size:cover;border:1px;position: relative;
+}
+.info{
+    height: 380px;
+}

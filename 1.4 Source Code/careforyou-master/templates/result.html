@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load i18n %}
+<head>
+    {% include "component/meta.html" %}
+
+  <title>{% trans "Search Result | Careforyou" %}</title>
+
+    {% include "component/css.html" %}
+
+  <!-- Custom styles for Map-->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    {% include "component/sidebar.html" %}
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        {% include "component/topbar.html" %}
+        <!-- End of Topbar -->
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">{% trans "Search Result" %}</h1>
+            <p class="mb-4">{% trans "Found" %} <span>{{ service_count }}</span> {% trans "Childcare services for" %} "{{ suburb }}", "{{language|upper}}". </p>
+            <div class="row">
+                <div class="col-xl-6 col-lg-7">
+            <!-- Childcare services List -->
+                <div class="card shadow mb-4">
+            <div class="card-body" style="height:500px">
+              <div class="table-responsive" style='width: 100%; height: 100%;'>
+                <table class="table compact table-bordered" id="services_list" width="100%" cellspacing="-1">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>{% trans "Name" %}</th>
+                      <th>{% trans "Suburb" %}</th>
+                      <th>{% trans "Address" %}</th>
+                      <th>{% trans "Language" %}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {% for childcare in results %}
+                    <tr>
+                        <td>{{ childcare.id }}</td>
+                        <td>{{ childcare.name }}</td>
+                        <td>{{ childcare.suburb_id.name }}</td>
+                        <td>{{ childcare.address }}</td>
+                        <td>{{ childcare.language_id.language }}</td>
+                    </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+                </div>
+                <div class="col-xl-6 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Body -->
+                <div class="card-body" style="height:500px">
+                    <div id='map' style='width: 100%; height: 100%;'></div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      {% include "component/footer.html" %}
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  {% include "component/script.html" %}
+
+  <!-- Scripts for datatable-->
+  <script src="{% static "datatable/jquery.dataTables.min.js" %}"></script>
+  <script src="{% static "datatable/dataTables.bootstrap4.min.js" %}"></script>
+  <script src="{% static "datatable/datatable.js" %}"></script>
+
+  <!-- Scripts for Map-->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <script src="{% static "map/map.js" %}"></script>
+
+  <script>
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [145, -37.8],
+    zoom:6
+    });
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+    var min_lat = 999;
+    var max_lat = -999;
+    var min_lon = 999;
+    var max_lon = -999;
+    {% for childcare in results %}
+        var popup = new mapboxgl.Popup({ offset: 25 }).setHTML('{{ childcare.name }}<a target="_blank" href="/details?id={{childcare.id}}"> {% trans "Get Details..." %} </a>');
+        // create the popup
+        var marker = new mapboxgl.Marker()
+        .setLngLat([ {{ childcare.longitude }}, {{ childcare.latitude }}])
+        .setPopup(popup)
+        .addTo(map);
+        // assign a id
+        marker.getElement().id = '{{childcare.id}}';
+
+        if ({{ childcare.latitude }} < min_lat )
+        {
+            min_lat = {{ childcare.latitude }};
+        }
+        if ({{ childcare.latitude }} > max_lat )
+        {
+            max_lat = {{ childcare.latitude }};
+        }
+        if ({{ childcare.longitude }} > max_lon )
+        {
+            max_lon = {{ childcare.longitude }};
+        }
+        if ({{ childcare.longitude }} < min_lon )
+        {
+            min_lon = {{ childcare.longitude }};
+        }
+    {% endfor %}
+
+    // [[min lon - padding, min lat - padding],[max lon + padding, max lat + padding]]
+    let bound = [[min_lon - 0.01, min_lat - 0.01], [max_lon + 0.01, max_lat + 0.01]];
+    map.fitBounds(bound);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,916 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-27 04:45+0000\n"
+"PO-Revision-Date: 2020-10-19 20:32+1100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Language: hi\n"
+"X-Source-Language: C\n"
+
+#: careforyou/API/ajax_check_added.py:22
+msgid "Already in the SaveList"
+msgstr "पहले से ही SaveList में"
+
+#: careforyou/API/ajax_check_added.py:26 templates/detail.html:45
+msgid "Add to the SaveList"
+msgstr "सेवलिस्ट में जोड़ें"
+
+#: careforyou/API/download_list.py:22
+msgid "ERROR: The savelist is empty."
+msgstr "समस्या: सूची खाली है"
+
+#: templates/404.html:7 templates/error.html:7 templates/result.html:8
+msgid "Search Result | Careforyou"
+msgstr "सर्च रिसल्त | केयर फॉर यु"
+
+#: templates/404.html:34
+msgid "Childcare Not found"
+msgstr "चाइल्डकैअर नहीं मिला"
+
+#: templates/404.html:35
+msgid "There are no childcare services for"
+msgstr "इस नाम से चाइल्डकैअर सेवाएं नहीं हैं"
+
+#: templates/404.html:36
+msgid "&larr; Back to Home"
+msgstr "वापस होम पे जाए"
+
+#: templates/about.html:8
+msgid "About Us | Careforyou"
+msgstr "हमारे बारे में: केयर फॉर यु"
+
+#: templates/about.html:36
+msgid "About us"
+msgstr "हमारे बारे में"
+
+#: templates/about.html:43
+msgid "This Project"
+msgstr "यह परियोजना"
+
+#: templates/about.html:52
+msgid ""
+"CareForYou aims to solve the problem faced by some First Generation "
+"Australians whose parent parents are working and whose native language is "
+"not English while growing up in Australia is that they find it difficult to "
+"understand and speak English as a second language early on in their lives, "
+"specially at school and day care."
+msgstr ""
+"केयर फॉर यु का उद्देश्य कुछ प्रथम पीढ़ी के ऑस्ट्रेलियाई लोगों द्वारा सामना "
+"की जाने वाली समस्या को हल करना है, जिनके माता-पिता काम कर रहे हैं और जिनकी "
+"मूल भाषा ऑस्ट्रेलिया में बड़े होने के दौरान अंग्रेजी नहीं है, उन्हें अपने "
+"जीवन में अंग्रेजी को दूसरी भाषा के रूप में समझना और बोलना मुश्किल लगता है, "
+"विशेष रूप से स्कूल और दिन देखभाल पर"
+
+#: templates/about.html:54
+#, python-format
+msgid ""
+"According to the Australian Bureau of Statistics from the 2011 census it is "
+"been said that almost 67%% of the recent arrivals to Australia spoke a "
+"language other than English at home. Further, only 43%% of the recent "
+"arrivals reported that they spoke English well."
+msgstr ""
+"2011 की जनगणना से ऑस्ट्रेलियाई सांख्यिकी ब्यूरो के अनुसार यह कहा गया है कि "
+"ऑस्ट्रेलिया में हाल ही में आने वाले लगभग 67%% ने घर पर अंग्रेजी के अलावा एक "
+"भाषा बोली। इसके अलावा, हाल ही के आगमन के केवल 43%% ने बताया कि वे अच्छी तरह "
+"से अंग्रेजी बोलते थे।."
+
+#: templates/about.html:69
+msgid "Our Team"
+msgstr "हमारी टीम"
+
+#: templates/about.html:79
+msgid "Santosh Reddy"
+msgstr "संतोष रेड्डी"
+
+#: templates/about.html:80 templates/about.html:94
+msgid "Master of Data Science"
+msgstr "मास्टर ओफ डाटा साइंस"
+
+#: templates/about.html:81
+msgid ""
+"Actively building my career in the field of Data Science, skilled in "
+"collecting, wrangling, analyzing and interpreting large datasets, developing "
+"new models."
+msgstr ""
+"डेटा साइंस के क्षेत्र में सक्रिय रूप से अपना करियर बनाना, बड़े डेटासेट "
+"इकट्ठा करने, विश्लेषण करने, विश्लेषण करने और उनकी व्याख्या करने में कुशल, "
+"विकासशील मॉडल विकसित करना"
+
+#: templates/about.html:86
+msgid "Abhinav Kapoor"
+msgstr "अभिनव कपूर"
+
+#: templates/about.html:87
+msgid "Master of Business Information Systems"
+msgstr "मास्टर ओफ बिसनेस इन्फोर्मेशन सिस्तेम"
+
+#: templates/about.html:88
+msgid ""
+"I am a Business Analyst from India who aspires to work in the Data Analytics "
+"domain to find and solve inefficient business processes."
+msgstr ""
+"मैं भारत से एक व्यवसाय विश्लेषक हूं जो अक्षम व्यावसायिक प्रक्रियाओं को खोजने "
+"और हल करने के लिए डेटा एनालिटिक्स डोमेन में काम करने की इच्छा रखता है"
+
+#: templates/about.html:93
+msgid "Zhenyu Liu"
+msgstr "हाओकी जू"
+
+#: templates/about.html:95
+msgid ""
+"Always being active and like to try new things and enjoy the journey of "
+"learning new stuff."
+msgstr ""
+"हमेशा सक्रिय रहना और नई चीजों को आजमाना और नई चीजें सीखने की यात्रा का आनंद "
+"लेना पसंद करते हैं"
+
+#: templates/about.html:100
+msgid "Haoqi Xu"
+msgstr "हाओचि क्ष्हू"
+
+#: templates/about.html:101
+msgid "Master of Information Technology"
+msgstr "मास्टर ओफ इन्फोर्मेशन सइस्तेम"
+
+#: templates/about.html:102
+msgid ""
+"I am enjoy to learn new skills and use my existing skills to implement "
+"projects with my team members."
+msgstr ""
+"मुझे अपनी टीम के सदस्यों के साथ परियोजनाओं को लागू करने के लिए नए कौशल सीखने "
+"और अपने मौजूदा कौशल का उपयोग करने में आनंद आता है"
+
+#: templates/component/footer.html:5
+msgid "Dependencies"
+msgstr "निर्भरता"
+
+#: templates/component/footer.html:23
+msgid "Design and Developed by Team Agileport from Monash University."
+msgstr "मोनाश विश्वविद्यालय से टीम एजिलेपोर्ट द्वारा डिजाइन और विकसित"
+
+#: templates/component/footer.html:27
+msgid "Copyright &copy; Careforyou 2020"
+msgstr "कॉपीराइट: केयर फॉर यु २०२०"
+
+#: templates/component/sidebar.html:18
+msgid "Home"
+msgstr "होम"
+
+#: templates/component/sidebar.html:26
+msgid "Information"
+msgstr "सूचना"
+
+#: templates/component/sidebar.html:32
+msgid "About"
+msgstr "हमारे बारे में"
+
+#: templates/component/topbar.html:12 templates/component/topbar.html:32
+msgid "Suburb Name or Postcode..."
+msgstr "सबर्ब का नाम या पोस्टकोड..."
+
+#: templates/component/topbar.html:50 templates/component/topbar.html:58
+#: templates/savelist2.html:43
+msgid "SaveList"
+msgstr "सेव्लिस्त"
+
+#: templates/component/topbar.html:70
+msgid "Clear the List"
+msgstr "सूची साफ़ करें"
+
+#: templates/component/topbar.html:74
+msgid "Download the List"
+msgstr "सूची डाउनलोड करें"
+
+#: templates/component/topbar.html:83
+msgid "Clear the list?"
+msgstr "सूची साफ़ करें?"
+
+#: templates/component/topbar.html:88
+msgid "Do you want to clear your SaveList?"
+msgstr "क्या आप अपने सेवेलिस्ट को साफ़ करना चाहते हैं?"
+
+#: templates/component/topbar.html:90 templates/detail.html:389
+msgid "Cancel"
+msgstr "केन्सेल"
+
+#: templates/component/topbar.html:91
+msgid "Clear"
+msgstr "कलियर"
+
+#: templates/detail.html:9
+msgid "Childcare Details | Careforyou"
+msgstr "चाइल्डकैअर विवरण | केयर फॉर यु"
+
+#: templates/detail.html:42
+msgid "Childcare Details"
+msgstr "चाइल्डकैअर विवरण"
+
+#: templates/detail.html:67
+msgid "Quality Stars"
+msgstr "गुणवत्ता के सितारे"
+
+#: templates/detail.html:74
+msgid "About the Rating"
+msgstr "रेटिंग के बारे में"
+
+#: templates/detail.html:76
+msgid ""
+"We use National Quality Standard Here. The National Quality Standard sets a "
+"benchmark for the quality of all education and care services across "
+"Australia."
+msgstr ""
+"हम यहाँ राष्ट्रीय गुणवत्ता मानक का उपयोग करते हैं। राष्ट्रीय गुणवत्ता मानक "
+"ऑस्ट्रेलिया भर में सभी शिक्षा और देखभाल सेवाओं की गुणवत्ता के लिए एक मानक "
+"निर्धारित करता है।"
+
+#: templates/detail.html:79 templates/detail.html:193
+msgid "More details"
+msgstr "अधिक जानकारी"
+
+#: templates/detail.html:98
+msgid "Contact Information"
+msgstr "संपर्क जानकारी"
+
+#: templates/detail.html:105 templates/result.html:52
+msgid "Address"
+msgstr "पता"
+
+#: templates/detail.html:117
+msgid "Phone"
+msgstr "फ़ोन"
+
+#: templates/detail.html:127
+msgid "Email"
+msgstr "ईमेल"
+
+#: templates/detail.html:137
+msgid "Fax"
+msgstr "फैक्स"
+
+#: templates/detail.html:144
+msgid "Language Program"
+msgstr "भाषा कार्यक्रम"
+
+#: templates/detail.html:153 templates/detail.html:184
+msgid "Early Childhood Language Program"
+msgstr "बचपन का भाषा कार्यक्रम"
+
+#: templates/detail.html:157 templates/detail.html:188
+msgid "About Early Childhood Language Program"
+msgstr "बचपन का भाषा कार्यक्रम"
+
+#: templates/detail.html:159 templates/detail.html:190
+msgid ""
+"The Victorian Government has allocated $17.9 million over four years "
+"(2019-2022) for the Early Childhood Language Program. It consists of two "
+"program modes: the Learn Languages at Kindergarten Program and Bilingual "
+"Kindergartens."
+msgstr ""
+"विक्टोरियन सरकार ने अर्ली चाइल्डहुड लैंग्वेज प्रोग्राम के लिए चार साल "
+"(2019-2022) में 17.9 मिलियन डॉलर का आवंटन किया है। इसमें दो प्रोग्राम मोड "
+"होते हैं: किंडरगार्टन प्रोग्राम और द्विभाषी किंडरगार्टन में भाषाएँ सीखें।"
+
+#: templates/detail.html:168
+msgid "Program Highlight"
+msgstr "कार्यक्रम कि हाइलाइट"
+
+#: templates/detail.html:204
+msgid "Comments and Reviews"
+msgstr "टिप्पणियाँ और समीक्षा"
+
+#: templates/detail.html:205
+msgid "Powered by Google Places"
+msgstr "Google Places द्वारा संचालित"
+
+#: templates/detail.html:245
+#| msgid "Quailty Ratings"
+msgid "Quality Ratings"
+msgstr "गुणवत्ता रेटिंग"
+
+#: templates/detail.html:246
+msgid "Based on NQS by ACECQA"
+msgstr "ACECQA द्वारा NQS पर आधारित है"
+
+#: templates/detail.html:249 templates/detail.html:256
+msgid "Educational program and practice"
+msgstr "शैक्षिक कार्यक्रम और अभ्यास"
+
+#: templates/detail.html:257
+msgid ""
+"Educational program and practice of educators are child-centred, stimulating "
+"and maximise opportunities for enhancing and extending each child’s learning "
+"and development."
+msgstr ""
+"शैक्षिक कार्यक्रम और शिक्षकों की प्रैक्टिस बच्चों को सीखने और विकास को "
+"बढ़ाने के लिए बच्चों पर केंद्रित, उत्तेजक और अधिकतम अवसर प्रदान करते हैं।"
+
+#: templates/detail.html:264 templates/detail.html:271
+msgid "Children’s health and safety"
+msgstr "बच्चों कि स्वास्थ्य और सुरक्षा"
+
+#: templates/detail.html:272
+msgid ""
+"Children have the right to experience quality education and care in an "
+"environment that safeguards and promotes their health, safety and wellbeing."
+msgstr ""
+"बच्चों को पर्यावरण की सुरक्षा और देखभाल में गुणवत्ता की शिक्षा और देखभाल का "
+"अनुभव करने का अधिकार है, जो उनके स्वास्थ्य, सुरक्षा और भलाई को बढ़ावा देता "
+"है।"
+
+#: templates/detail.html:279 templates/detail.html:286
+msgid "Physical environment"
+msgstr "भौतिक वातावरण"
+
+#: templates/detail.html:287
+msgid ""
+"Physical environment is safe, suitable and provides a rich and diverse range "
+"of experiences that promote children’s learning and development."
+msgstr ""
+"भौतिक वातावरण सुरक्षित, उपयुक्त है और बच्चों के सीखने और विकास को बढ़ावा "
+"देने वाले समृद्ध और विविध अनुभव प्रदान करता है।"
+
+#: templates/detail.html:294 templates/detail.html:301
+msgid "Staffing arrangements"
+msgstr "स्टाफ की व्यवस्था"
+
+#: templates/detail.html:302
+msgid ""
+"Qualified and experienced educators, who develop warm, respectful "
+"relationships with children, create predictable environments and encourage "
+"children’s active engagement in the learning program."
+msgstr ""
+"योग्य और अनुभवी शिक्षक, जो बच्चों के साथ सम्मानजनक संबंध विकसित करते हैं, "
+"पूर्वानुमानित वातावरण बनाते हैं और सीखने के कार्यक्रम में बच्चों की सक्रिय "
+"भागीदारी को प्रोत्साहित करते हैं।"
+
+#: templates/detail.html:309 templates/detail.html:316
+msgid "Relationships with children"
+msgstr "बच्चों के साथ संबंध"
+
+#: templates/detail.html:317
+msgid ""
+"Relationships with children are responsive, respectful and promote "
+"children’s sense of security and belonging."
+msgstr ""
+"बच्चों के साथ संबंध संवेदनशील, सम्मानजनक और बच्चों की सुरक्षा और अपनेपन की "
+"भावना को बढ़ावा देने वाले हैं।"
+
+#: templates/detail.html:324 templates/detail.html:331
+msgid "Collaborative partnerships with families and communities"
+msgstr "परिवारों और समुदायों के साथ सहयोगात्मक साझेदारी"
+
+#: templates/detail.html:332
+msgid ""
+"Collaborative relationships with families are fundamental to achieving "
+"quality outcomes for children, and community partnerships based on active "
+"communication, consultation and collaboration are essential."
+msgstr ""
+"परिवारों के साथ सहयोगात्मक संबंध बच्चों के लिए गुणवत्ता के परिणाम प्राप्त "
+"करने के लिए मौलिक हैं, और सक्रिय संचार, परामर्श और सहयोग पर आधारित सामुदायिक "
+"भागीदारी आवश्यक हैं।"
+
+#: templates/detail.html:339 templates/detail.html:346
+msgid "Governance and leadership"
+msgstr "शासन और नेतृत्व"
+
+#: templates/detail.html:347
+msgid ""
+"Effective leadership and governance of the service contributes to quality "
+"environments for children’s learning and development. Effective leaders "
+"establish shared values for the service and set clear direction for the "
+"service’s continuous improvement."
+msgstr ""
+"सेवा का प्रभावी नेतृत्व और शासन बच्चों के सीखने और विकास के लिए गुणवत्ता "
+"वाले वातावरण में योगदान देता है। प्रभावी नेता सेवा के लिए साझा मूल्य स्थापित "
+"करते हैं और सेवा के निरंतर सुधार के लिए स्पष्ट दिशा निर्धारित करते हैं।"
+
+#: templates/detail.html:382
+msgid "Add to the SaveList?"
+msgstr "सेवलिस्ट में जोड़ें?"
+
+#: templates/detail.html:387
+msgid "Do you want to add the current childcare to your SaveList?"
+msgstr "क्या आप इस चाइल्डकैअर को अपने सैवेलिस्ट में जोड़ना चाहते हैं?"
+
+#: templates/detail.html:390
+msgid "Add"
+msgstr "जोदे"
+
+#: templates/error.html:32
+msgid "Password not correct"
+msgstr "पासवर्ड गलत हे"
+
+#: templates/error.html:33
+msgid "&larr; Please enter again"
+msgstr "फिर से दर्ज करें"
+
+#: templates/information.html:8
+msgid "Information | Careforyou"
+msgstr "सूचना | केयर फॉर यु"
+
+#: templates/information.html:37
+msgid "Information for Childcare"
+msgstr "सूचना"
+
+#: templates/information.html:46
+msgid "COVID-19 Information"
+msgstr "कोविद -19 जानकारी"
+
+#: templates/information.html:47
+msgid ""
+"This link contains the latest information from Victorian Government, "
+"Department of Education and Training regarding childcare for Victorian "
+"Parents.It also contains the latest advice regarding Coronavirus (COVID-19)"
+msgstr ""
+"इस लिंक में विक्टोरियन माता-पिता के लिए चाइल्डकैअर के बारे में विक्टोरियन "
+"सरकार, शिक्षा विभाग और प्रशिक्षण विभाग की नवीनतम जानकारी शामिल है। इसमें "
+"कोरोनावायरस (COVID-19) से संबंधित नवीनतम सलाह भी शामिल है।"
+
+#: templates/information.html:48
+msgid "Learn More"
+msgstr "और जानें"
+
+#: templates/information.html:59
+msgid "Practical Information for Victorian Parents"
+msgstr "विक्टोरियन माता-पिता के लिए व्यावहारिक जानकारी"
+
+#: templates/information.html:60
+msgid ""
+"These are the detailed information for the parents step by step process of "
+"how to find and enroll his child in childcare."
+msgstr ""
+"ये माता-पिता के लिए विस्तृत जानकारी है कि वे अपने बच्चे के लिये चाइल्डकैअर "
+"कैसे खोजें और उसका नामांकन करें।"
+
+#: templates/information.html:67
+msgid "Early parenting centers"
+msgstr "प्रारंभिक पेरेंटिंग केंद्र"
+
+#: templates/information.html:73
+msgid ""
+"Early parenting centers provide a number of different services where their "
+"main agenda is to help parents who require additional support to take care "
+"of their kids."
+msgstr ""
+"प्रारंभिक पेरेंटिंग केंद्र कई अलग-अलग सेवाएं प्रदान करते हैं जहां उनका मुख्य "
+"एजेंडा उन माता-पिता की मदद करना है जिन्हें अपने बच्चों की देखभाल के लिए "
+"अतिरिक्त सहायता की आवश्यकता होती है।"
+
+#: templates/information.html:74
+msgid ""
+"They are mainly focused on building ability and talents for parenting, "
+"enhancing the bond between parent and child, Strengthening the relation of a "
+"family to their culture and Assessing the mental health of children."
+msgstr ""
+"वे मुख्य रूप से पालन-पोषण के लिए क्षमता और प्रतिभा निर्माण, माता-पिता और "
+"बच्चे के बीच बंधन को बढ़ाने, उनकी संस्कृति के लिए एक परिवार के संबंध को "
+"मजबूत करने और बच्चों के मानसिक स्वास्थ्य का आकलन करने पर केंद्रित हैं।"
+
+#: templates/information.html:75
+msgid ""
+"Most of these services are accessible for parents who have a kid right from "
+"the pregnancy till the child grows to 4 years of age, and as a kid he "
+"requires extra help to learn skills and grow up."
+msgstr ""
+"इन सेवाओं में से अधिकांश माता-पिता के लिए सुलभ हैं जिनके पास 4 वर्ष की आयु "
+"तक का बच्चा है| और एक बच्चे के रूप में उसे कौशल सीखने और बड़े होने के लिए "
+"अतिरिक्त मदद की आवश्यकता होती है।"
+
+#: templates/information.html:78 templates/information.html:96
+#: templates/information.html:118 templates/information.html:138
+#: templates/information.html:159 templates/information.html:181
+#: templates/information.html:200 templates/information.html:218
+msgid "More Detail"
+msgstr "अधिक जानकारी"
+
+#: templates/information.html:85
+msgid "Community playgroups"
+msgstr "सामुदायिक प्लेग्रुप"
+
+#: templates/information.html:91
+msgid ""
+"This is a fun group gathering where parents and children under the school "
+"age meet up."
+msgstr ""
+"यह एक मजेदार समूह सभा है, जहाँ स्कूल की उम्र से कम उम्र के माता-पिता और "
+"बच्चे आपस मे मिलते हैं।"
+
+#: templates/information.html:92
+msgid ""
+"It’s usually parents who organize these events for kids to interact with "
+"each other and find friends and the childs gets a place to play with his "
+"other friends ,meet different people from different cultures."
+msgstr ""
+"यह आमतौर पर माता-पिता जो बच्चों के लिए इन कार्यक्रमों को एक दूसरे के साथ "
+"बातचीत करने और दोस्तों को खोजने के लिए आयोजित करते हैं और बच्चों को अपने "
+"अन्य दोस्तों के साथ खेलने के लिए जगह मिलती है, विभिन्न संस्कृतियों के "
+"अलग-अलग लोगों से मिलते हैं।"
+
+#: templates/information.html:93
+msgid ""
+"There is usually a base fee for these community gatherings to compensate for "
+"the cost to organise the event."
+msgstr ""
+"आम तौर पर इन सामुदायिक समारोहों के लिए एक आधार शुल्क होता है जो आयोजन को "
+"आयोजित करने की लागत की भरपाई करता है।"
+
+#: templates/information.html:103
+msgid "How to choose the best childcare?"
+msgstr "सबसे अच्छा चाइल्डकैअर कैसे चुनें?"
+
+#: templates/information.html:109
+msgid "When looking for a childcare make sure that the child care provides:"
+msgstr "चाइल्डकैअर की तलाश में सुनिश्चित करें कि चाइल्डकैअर यह प्रदान करता है:"
+
+#: templates/information.html:110
+msgid "Provides your kid with valuable playing and learning opportunities."
+msgstr "आपके बच्चे को बहुमूल्य खेल और सीखने के अवसरों प्रदान करता है।"
+
+#: templates/information.html:111
+msgid ""
+"Ensure that the relationship between employers and the child is loving and "
+"consistent."
+msgstr ""
+"सुनिश्चित करें कि नियोक्ता और बच्चे के बीच का संबंध प्रेमपूर्ण और सुसंगत है।"
+
+#: templates/information.html:112
+msgid "Allows kids time to investigate and discover new activities"
+msgstr "बच्चों को नई गतिविधियों की जांच और खोज का समय देता है"
+
+#: templates/information.html:113
+msgid ""
+"Promotes all facets of the wellbeing of your child, including their social , "
+"mental, physical and cognitive needs"
+msgstr ""
+"अपने बच्चे की भलाई के सभी पहलुओं को बढ़ावा देता है, जिसमें उनकी सामाजिक, "
+"मानसिक, शारीरिक और संज्ञानात्मक आवश्यकताएं शामिल हैं"
+
+#: templates/information.html:114
+msgid "Establishes simple and realistic behavioural expectations"
+msgstr "सरल और यथार्थवादी व्यवहार अपेक्षाओं को स्थापित करता है"
+
+#: templates/information.html:115
+msgid "Act with your family in cooperation."
+msgstr " अपने परिवार के सहयोग के साथ कार्य करें।"
+
+#: templates/information.html:125
+msgid "How to choose a quality childhood service?"
+msgstr "सर्वोत्तम बाल सेवा केंद्र का चुनाव कैसे करें"
+
+#: templates/information.html:131
+msgid ""
+"In a scheme called the National Quality Framework, the quality of child care "
+"facilities is rated."
+msgstr ""
+"नेशनल क्वालिटी फ्रेमवर्क नामक एक योजना में, बाल देखभाल सुविधाओं की गुणवत्ता "
+"का मूल्यांकन किया गया है।"
+
+#: templates/information.html:132
+msgid ""
+"Quality child care and kindergarten are critical, much like colleges, "
+"because high-quality early education sets young kids up for life."
+msgstr ""
+"गुणवत्तापूर्ण देखभाल और किंडरगार्टन, कॉलेजों की तरह महत्वपूर्ण हैं, क्योंकि "
+"उच्च गुणवत्ता वाली प्रारंभिक शिक्षा बच्चों को जीवन के लिए तैयार करती है।"
+
+#: templates/information.html:133
+msgid ""
+"The National Quality System is structured to increase the quality of "
+"programmes for early childhood. Measuring the consistency of facilities is a "
+"major priority of the system."
+msgstr ""
+"राष्ट्रीय गुणवत्ता प्रणाली को प्रारंभिक बचपन के लिए कार्यक्रमों की गुणवत्ता "
+"बढ़ाने के लिए संरचित किया गया है। सुविधाओं की स्थिरता को मापना प्रणाली की "
+"प्रमुख प्राथमिकता है।"
+
+#: templates/information.html:134
+msgid ""
+"To help them select early education and treatment, this knowledge is "
+"provided to families."
+msgstr ""
+"प्रारंभिक शिक्षा और उपचार का चयन करने में उनकी मदद करने के लिए, यह ज्ञान "
+"परिवारों को प्रदान किया जाता है।"
+
+#: templates/information.html:135
+msgid ""
+"The quality of early childhood services is measured against seven quality "
+"areas such as Educational program and practice, Children's health and "
+"safety, physical environment, Staffing arrangements, Relationships with "
+"children, Collaborative partnerships with families and communities, "
+"Leadership and service management."
+msgstr ""
+"बचपन की प्रारंभिक सेवाओं की गुणवत्ता को शैक्षिक कार्यक्रम और अभ्यास, बच्चों "
+"के स्वास्थ्य और सुरक्षा, भौतिक वातावरण, स्टाफ की व्यवस्था, बच्चों के साथ "
+"संबंधों, परिवारों और समुदायों के साथ सहयोगपूर्ण भागीदारी, नेतृत्व और सेवा "
+"प्रबंधन जैसे सात गुणवत्ता वाले क्षेत्रों के खिलाफ मापा जाता है।"
+
+#: templates/information.html:147
+msgid "Types of childcare"
+msgstr "चाइल्डकैअर के प्रकार"
+
+#: templates/information.html:153
+msgid ""
+"Long Day care: Open to kids whose families are busy or learning, or who need "
+"more time off on a daily basis."
+msgstr ""
+"लॉन्ग डे केयर: उन बच्चों के लिए खुला है जिनके परिवार व्यस्त हैं या सीखने "
+"वाले हैं, या जिन्हें दैनिक आधार पर अधिक समय की आवश्यकता है।"
+
+#: templates/information.html:154
+msgid ""
+"Occasional care: It supports parents with less formal demands, such as the "
+"need for an appointment or to relax for two hours."
+msgstr ""
+"समसामयिक देखभाल: यह कम औपचारिक मांगों के साथ माता-पिता का समर्थन करता है, "
+"जैसे कि नियुक्ति की आवश्यकता या दो घंटे के लिए आराम करना।"
+
+#: templates/information.html:155
+msgid ""
+"Family Day Care: Centered in the home of a carer with a very limited number "
+"of other kids."
+msgstr ""
+"फैमिली डे केयर: बहुत ही सीमित संख्या में अन्य बच्चों के साथ एक देखभाल करने "
+"वाले के घर में केंद्रित।"
+
+#: templates/information.html:156
+msgid ""
+"In-Home Care: When in your own house, the caregiver cares for your infant. "
+"This is normally referred to as a nanny or au pair."
+msgstr ""
+"इन-होम केयर: जब आपके अपने घर में, देखभाल करने वाला आपके शिशु की देखभाल करता "
+"है। इसे आम तौर पर नानी या औ जोड़ी के रूप में जाना जाता है।"
+
+#: templates/information.html:166
+msgid "Enroll in childcare"
+msgstr "चाइल्डकैअर में दाखिला ले"
+
+#: templates/information.html:172
+msgid ""
+"You need to register your child after you have selected a child care "
+"provider that has a position open that suits your family's needs. Later need "
+"to provide all the information of your child such as:"
+msgstr ""
+"आपके द्वारा अपने बच्चे को पंजीकृत करने की आवश्यकता है जब आपने एक बच्चे की "
+"देखभाल प्रदाता का चयन किया है, जिसके पास एक ऐसी स्थिति है जो आपके परिवार की "
+"जरूरतों के अनुकूल है। बाद में अपने बच्चे की सभी जानकारी प्रदान करने की "
+"आवश्यकता है जैसे:"
+
+#: templates/information.html:173
+msgid "Name and address of the baby and specifics of any special needs"
+msgstr "बच्चे का नाम और पता और किसी विशेष आवश्यकता की बारीकियाँ"
+
+#: templates/information.html:174
+msgid "Data about you and all other parents , caregivers or guardians"
+msgstr ""
+"आपके और अन्य सभी माता-पिता, देखभाल करने वाले या अभिभावकों के बारे में डेटा"
+
+#: templates/information.html:175
+msgid "Information of the entities who will pick your child up"
+msgstr "उन संस्थाओं की जानकारी जो आपके बच्चे को उठाएंगी"
+
+#: templates/information.html:176
+msgid "Birth certificate for the child or other identification records"
+msgstr "बच्चे या अन्य पहचान रिकॉर्ड के लिए जन्म प्रमाण पत्र"
+
+#: templates/information.html:177
+msgid ""
+"Information of any parenting orders or civil issues about your child's "
+"treatment or welfare (the details must be kept confidential by the child "
+"care service)"
+msgstr ""
+"आपके बच्चे के उपचार या कल्याण के बारे में किसी भी पालन-पोषण आदेश या नागरिक "
+"मुद्दों की जानकारी (विवरण चाइल्ड केयर सर्विस द्वारा गोपनीय रखा जाना चाहिए)"
+
+#: templates/information.html:178
+msgid "Medical health and immunisation status for your kids."
+msgstr "आपके बच्चों के लिए चिकित्सा स्वास्थ्य और टीकाकरण की स्थिति।"
+
+#: templates/information.html:188
+msgid "How much does childcare cost?"
+msgstr "चाइल्डकैअर की लागत कितनी है?"
+
+#: templates/information.html:194
+msgid ""
+"Many kindergarten curriculum costs are partially charged directly to the "
+"kindergarten by the Victorian government. This keeps fees down and allows "
+"kids to have a fun experience with their children."
+msgstr ""
+"कई किंडरगार्टन पाठ्यक्रम लागत आंशिक रूप से सीधे विक्टोरियन सरकार द्वारा "
+"बालवाड़ी के लिए शुल्क ली जाती है। यह फीस को कम रखता है और बच्चों को अपने "
+"बच्चों के साथ एक मजेदार अनुभव देता है।"
+
+#: templates/information.html:195
+msgid ""
+"To better cover the expense of running kindergarten classes, all "
+"kindergartens charge fees. Specific kindergartens set rates which focus on "
+"factors such as how many hours the child attends and if there are added "
+"expenses such as excursions."
+msgstr ""
+"बालवाड़ी कक्षाओं को चलाने के खर्च को बेहतर ढंग से कवर करने के लिए, सभी "
+"किंडरगार्टन शुल्क लेते हैं। विशिष्ट किंडरगार्टन दरों को निर्धारित करते हैं, "
+"जो कारकों पर ध्यान केंद्रित करते हैं जैसे कि बच्चे कितने घंटे में भाग लेते "
+"हैं और यदि भ्रमण जैसे अतिरिक्त खर्च हैं।"
+
+#: templates/information.html:196
+msgid ""
+"For their schedule of payments, call the kindergarten you are involved in. "
+"To guarantee a child's spot in the curriculum, several kindergartens call "
+"for a nominal fee."
+msgstr ""
+"भुगतान के अपने शेड्यूल के लिए, जिस बालवाड़ी में आप शामिल हैं, उसे कॉल करें। "
+"पाठ्यक्रम में बच्चे के स्थान की गारंटी देने के लिए, कई किंडरगार्टन मामूली "
+"शुल्क पर कॉल करते हैं।"
+
+#: templates/information.html:197
+msgid ""
+"Any kindergartens have services that the Department does not fund, often "
+"attracting fees."
+msgstr ""
+"किसी भी किंडरगार्टन के पास ऐसी सेवाएं हैं जो विभाग को निधि नहीं देता है, "
+"अक्सर फीस आकर्षित करती है।"
+
+#: templates/information.html:207
+msgid "Financial help for parents"
+msgstr "माता-पिता के लिए वित्तीय मदद"
+
+#: templates/information.html:213
+msgid ""
+"If you follow those conditions, you will get financial support with housing "
+"and child care expenses."
+msgstr ""
+"यदि आप उन शर्तों का पालन करते हैं, तो आपको आवास और बच्चे की देखभाल के खर्च "
+"के साथ वित्तीय सहायता मिलेगी।"
+
+#: templates/information.html:214
+msgid ""
+"Help with living costs: Families often unexpectedly find their situations "
+"shifting and they are unable to navigate work openings that accommodate "
+"their current family commitments easily.There are a variety of services open "
+"to the Federal Government to support people who find themselves in financial "
+"distress."
+msgstr ""
+"रहने की लागत के साथ मदद करें: परिवार अक्सर अप्रत्याशित रूप से अपनी स्थितियों "
+"को बदलते हुए पाते हैं और वे काम के उद्घाटन को नेविगेट करने में असमर्थ होते "
+"हैं जो उनकी वर्तमान पारिवारिक प्रतिबद्धताओं को आसानी से समायोजित करते हैं। "
+"संघीय सरकार के लिए कई तरह की सेवाएं खुली हैं जो उन लोगों का समर्थन करती हैं "
+"जो खुद को वित्तीय संकट में पाते हैं।"
+
+#: templates/information.html:215
+msgid ""
+"Help with Kindergarten Fees: Families who have such concession passes, "
+"passports or papers have access to the Kindergarten Fee Subsidy.For "
+"Aboriginal or Torres Strait Islander students, or students who have had "
+"experience with child welfare, Early Start Kindergarten is a free or "
+"low-cost kindergarten."
+msgstr ""
+"बालवाड़ी शुल्क के साथ मदद: जिन परिवारों में ऐसी रियायत पास है, पासपोर्ट या "
+"कागजात के लिए बालवाड़ी शुल्क सब्सिडी का उपयोग किया जाता है। आदिवासी या टोरेस "
+"स्ट्रेट आइलैंडर छात्रों, या जिन छात्रों को बाल कल्याण का अनुभव है, अर्ली "
+"स्टार्ट किंडरगार्टन एक स्वतंत्र या निम्न है। लागत बालवाड़ी।"
+
+#: templates/landing.html:8
+msgid "Home | Careforyou"
+msgstr "होम | केयर फॉर यु"
+
+#: templates/landing.html:72
+msgid "Find the Childcare Services Nearby"
+msgstr "अपने पास चाइल्डकैअर सेवाओं को खोजें"
+
+#: templates/landing.html:77
+msgid "Suburb Name or Postcode"
+msgstr "सबर्ब का नाम या पोस्टकोड..."
+
+#: templates/landing.html:80
+msgid "Search"
+msgstr "खोजे"
+
+#: templates/landing.html:85
+msgid "(Optional)Choose a language for your childcare services:"
+msgstr "(वैकल्पिक) अपने चाइल्डकैअर सेवाओं के लिए एक भाषा चुनें:"
+
+#: templates/landing.html:107
+msgid "Explore Nearby"
+msgstr "आस-पास खोजे"
+
+#: templates/landing.html:108
+msgid ""
+"Find Bilingual Childcare Services near you fluent in your native language."
+msgstr ""
+"अपनी मूल भाषा में धाराप्रवाह आप के पास द्विभाषी चाइल्डकैअर सेवाओं का पता "
+"लगाएं।"
+
+#: templates/landing.html:116
+msgid "Save Suitable Services"
+msgstr "उपयुक्त सेवाएँ सेव करे"
+
+#: templates/landing.html:117
+msgid ""
+"Download the information of centres that you find suitable. No need to "
+"create an account or login."
+msgstr ""
+"उन केंद्रों की जानकारी डाउनलोड करें जो आपको उपयुक्त लगते हैं। खाता बनाने या "
+"लॉगिन करने की आवश्यकता नहीं है।"
+
+#: templates/landing.html:125
+msgid "Childcare Policies"
+msgstr "चाइल्डकैअर नीतियां"
+
+#: templates/landing.html:126
+msgid "Find the information related to childcare policies in Australia."
+msgstr "ऑस्ट्रेलिया में चाइल्डकैअर नीतियों से संबंधित जानकारी प्राप्त करें।"
+
+#: templates/landing.html:136
+msgid "News and Articles"
+msgstr "समाचार और लेख"
+
+#: templates/landing.html:150
+msgid "Posted by&nbsp;"
+msgstr "पोस्ट करने वाला;"
+
+#: templates/landing.html:150
+msgid " at "
+msgstr "तारीख"
+
+#: templates/result.html:38
+msgid "Search Result"
+msgstr "सर्च रिसल्त"
+
+#: templates/result.html:39
+msgid "Found"
+msgstr "मिला"
+
+#: templates/result.html:39
+msgid "Childcare services for"
+msgstr "चाइल्डकैअर सेवाओं"
+
+#: templates/result.html:50
+msgid "Name"
+msgstr "नाम"
+
+#: templates/result.html:51
+msgid "Suburb"
+msgstr "सबर्ब का नाम"
+
+#: templates/result.html:53
+msgid "Language"
+msgstr "भाषा"
+
+#: templates/result.html:127
+msgid "Get Details..."
+msgstr "विवरण प्राप्त करे..."
+
+#: templates/savelist2.html:48
+msgid "Childcare Name:"
+msgstr "चाइल्डकैअर का नाम"
+
+#: templates/savelist2.html:49
+msgid "Suburb:"
+msgstr "सबर्ब:"
+
+#: templates/savelist2.html:50
+msgid "Address:"
+msgstr "पता:"
+
+#: templates/savelist2.html:51
+msgid "Phone:"
+msgstr "फ़ोन:"
+
+#: templates/savelist2.html:52
+msgid "Email:"
+msgstr "ई-मेल:"
+
+#: templates/savelist2.html:53
+msgid "Fax:"
+msgstr "फैक्स:"
+
+#: templates/savelist2.html:54
+msgid "Language:"
+msgstr "भाषा:"
+
+#~ msgid "Regulation"
+#~ msgstr "रेगुलेशन"
+
+#~ msgid "Suburb Name..."
+#~ msgstr "सबर्ब का नाम..."
+
+#~ msgid "Regulation and Policy | Careforyou"
+#~ msgstr "विनियमन और नीति | केयर फॉर यु"
+
+#~ msgid "Regulation and Policy"
+#~ msgstr "विनियमन और नीति"
+
+#~ msgid "Save List"
+#~ msgstr "सेव्लिस्त"
